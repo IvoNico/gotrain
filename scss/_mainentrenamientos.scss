@@ -1,0 +1,90 @@
+body{
+    main{
+        .entrenamientos{
+            margin-bottom: 150px;
+        }
+        .entrenamientos__hipertrofia--info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            margin-left: 30px;
+            margin-right: 10px;
+            .entrenamientos__hipertrofia{
+                box-shadow:  $box-shadowsombra;       /*sensacion de profundidad*/
+                border-radius: 2%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                margin-bottom: 25px;
+                max-width: 1024px;
+                .img__entrenamientos{
+                    width: 200px;
+                    border-radius: 5%;
+                }
+                .title{
+                    text-decoration: none;
+                    color: black;
+                    display: flex;
+                    justify-content: center;
+                    font-family: $title-font;
+                    margin-left: 10px;
+                    margin-bottom: 15px;
+                }
+                .entrenamientos__contenido{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 30px;
+                    margin: 30px;
+                    font-size: ($font-size/5);
+                }
+            }
+        }
+        .entrenamientos__resistencia--info{
+            @extend .entrenamientos__hipertrofia--info;
+            .entrenamientos__resistencia{
+                @extend .entrenamientos__hipertrofia;
+                .title{
+                    @extend .title;
+                }
+                .entrenamientos__contenido{
+                    @extend .entrenamientos__contenido;
+                }
+            }
+            .img__entrenamientos{
+                @extend .img__entrenamientos;
+            }
+        }
+        .entrenamientos__fuerza--info{
+            @extend .entrenamientos__hipertrofia--info;
+            .entrenamientos__fuerza{
+                @extend .entrenamientos__hipertrofia;
+                .title{
+                    @extend .title;
+                }
+                .entrenamientos__contenido{
+                    @extend .entrenamientos__contenido;
+                }
+            }
+            .img__entrenamientos{
+                @extend .img__entrenamientos;
+            }
+        }
+        .entrenamientos__fuerza:hover, .entrenamientos__hipertrofia:hover, .entrenamientos__resistencia:hover{
+            transform: scale(1.1, 1.1);          /*expandir elemento*/
+            transition: all 1.5s ease;      /*velocidad a la que cambia el elemento*/
+        }
+        .title__inspiracion{
+            display: flex;
+            justify-content: center;
+            font-family: $title-font;
+            font-size: 6rem;
+            margin-bottom: 35px;
+        }
+    }
+}

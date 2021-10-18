@@ -1,0 +1,54 @@
+header{
+    .menu{
+        background-color: rgb(0, 0, 0) !important;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        width: 100%;
+        border-bottom: 1px solid $cool-yelow;   /*colocar borde inferior al menu*/
+        position: fixed;
+    }
+    .menuLogo{
+        font-size: 35px;
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+    }  
+    .listas{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        list-style: none;                      /*elimina los puntos o subrayados de los items*/
+        text-decoration: none;
+        color: white;
+        padding-left: 50%;
+        align-items: center;
+    }
+    .listasMenuLinks{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        margin-right: 15px;
+        font-size: $font-size/5;
+        margin-top: 5px;
+    }
+    .listasMenuEntrenar{
+        font-size: $font-size/5;
+    }
+    .listasMenuEntrenamientos{ /*SUBMENU*/
+        position: absolute;
+        list-style: none;
+        background-color: #63624ebb;
+        text-align: left;
+        padding: 10px;
+        display: none;
+    }
+    .listasMenuEntrenar:hover .listasMenuEntrenamientos{    /*se utiliza para que aparezca el menu al colocar el mouse encima*/
+    display: block;
+    color: $cool-yelow;
+    }
+    .listasMenuLinks:hover{
+        color: $cool-yelow;
+    }
+}

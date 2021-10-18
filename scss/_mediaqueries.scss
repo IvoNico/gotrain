@@ -1,0 +1,195 @@
+//RESPONISVE//
+@media only screen and (max-width: 834px) and (min-width: 415px){
+    body{
+        header{
+            .banner{
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                height: 200vh;
+                background-size: cover;
+                width: 100%;
+            }
+            .bannerInfo{
+                margin: 0 auto;
+                display: flex;
+                position:absolute;       /*colocar texto por encima de la imagen*/
+                color: white;
+                margin-bottom: 150px;
+                margin-top: 100px;
+                font-size: ($font-size/2)-25;
+                margin-left: 50px;
+                max-width: 300px;
+            }
+            .bannerInfoText{
+                width: 200px;
+                font-size: ($font-size/5)-15px;
+            }
+            .bannerScroll{
+                margin: 0 auto;
+                display: flex;
+                flex-direction:row;
+                position:absolute; 
+                text-decoration: none;
+                font-size: ($font-size/5);
+                padding: 10px;
+                color: white;
+            }
+        }
+        main{ 
+            .trainDieta, .trainEntrenar, .trainSalud{
+                box-shadow:  $box-shadowsombra;       /*sensacion de profundidad*/
+                border-radius: 2%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 400px;
+                margin-bottom: 20px;
+                margin-right: 200px;
+            }
+            .trainDietaInfo, .trainEntrenarInfo, .trainSaludInfo{
+                margin: 80px;
+                font-size: ($font-size/5);
+            }
+            .videoIndex{
+                width: 200px;
+            }
+            .indexDown{
+                display: flex;
+                flex-direction: column;
+                max-width: 900px;
+                margin-left: 0;
+            }
+            .imgMotivacion{
+                width: 425px;
+                display: flex;
+                margin: 0 auto;
+                margin-right: 200px;
+            }
+            .indexDownInfo{
+                font-size: ($font-size/5)-5;
+                margin-right: 150px;
+                display: flex;
+                margin: 0 auto;
+                margin-right: 35px;
+            }
+            .entrenamientosTitle{
+                display: flex;
+                text-align: center;
+                font-size: ($font-size/2)-10;
+            }
+            .bannerEntrenamiento{
+                max-width: 600px;
+                margin: 0 auto;
+                display: flex;
+                justify-content:space-around;
+                
+                width: 100%;  
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                margin-bottom: 150px;
+            }
+            .entrenamientos{
+                max-width: 420px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .entrenamientosFuerza, .entrenamientosHipertrofia, .entrenamientosResistencia{
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                max-width: 400px;
+                margin-bottom: 20px;
+                }
+            .entrenamientosResistencia{
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                max-width: 400px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }
+            .entrenamientosContenido{
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+                margin: 30px;
+                font-size: 15px;
+            }
+            .titleInspiracion{
+                font-size: 2rem;
+            }
+        }
+        .footer{
+            height: 100px;
+            align-items: center;
+            .footerTitle{
+                display: none;
+            }
+            .footerRedes{
+                margin-left: 100px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 834px){
+    body{
+        header{
+            .listas{
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                list-style: none;                      /*elimina los puntos o subrayados de los items*/
+                text-decoration: none;
+                color: white;
+                align-items: center;
+                text-align: center;
+                margin-right: 200px;
+            }
+        }
+        main{
+            .trainDieta, .trainEntrenar, .trainSalud{
+                box-shadow:  5px 5px 20px 5px rgba(69,67,96,0.1);       /*sensacion de profundidad*/
+                border-radius: 2%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 700px;
+                margin-bottom: 20px;
+            }
+            .trainDietaInfo, .trainEntrenarInfo, .trainSaludInfo{
+                margin-top: 15px;
+                font-size: ($font-size/5);
+            }
+            .indexDown{
+                display: flex;
+                flex-direction: column;
+                width: 750px;
+            }
+            .indexDownInfo{
+                font-size: ($font-size/5)+10;
+            }
+        }
+        .footer{
+            height: 100px;
+            align-items: center;
+            .footerTitle{
+                display: none;
+            }
+            .footerRedes{
+                margin-left: 100px;
+            }
+        }
+    }
+}

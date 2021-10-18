@@ -1,0 +1,37 @@
+body{
+    .footer{
+        background-color: #868686;
+        height:100px;
+        color: black;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        .footerTitle{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font: $title-font;
+            color: black;
+            margin-left: 300px;
+            margin-right: 300px;
+            font-size: ($font-size/2)-20;
+        }
+        .footerContactoList{
+            list-style: none;
+            text-align: left;
+            text-decoration: none;
+        }
+        .footerContacto{
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
+        .footerRedesImg{
+            width: 25px;
+        }
+        .footerRedesLinks{
+            text-decoration: none;
+        }
+    }
+}

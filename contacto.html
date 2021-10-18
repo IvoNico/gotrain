@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Urbanist:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="icon" href="img/Favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="index.css">
+    <title>Gotrain</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar menu navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand menuLogo" href="index.html">Gotrain</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"  id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item listasMenu">
+                        <a class="nav-link listasMenuLinks" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item listasMenuEntrenar">
+                        <a class="nav-link listasMenuLinks" href="entrenamiento.html">Entrenamientos</a>
+                        <ul class="listasMenuEntrenamientos">
+                            <li><a href="hipertrofia.html" class="listasMenuLinks" target="_blank">Hipertrofia</a></li>
+                            <li><a href="resistencia.html" class="listasMenuLinks" target="_blank">Resistencia</a></li>
+                            <li><a href="fuerza.html" class="listasMenuLinks" target="_blank">Fuerza</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item listasMenu">
+                        <a class="nav-link  listasMenuLinks" href="nutricion.html">Nutrición</a>
+                    </li>
+                    <li class="nav-item listasMenu">
+                        <a class="nav-link listasMenuLinks" href="salud.html">Salud</a>
+                    </li>
+                    <li class="nav-item listasMenu">
+                        <a class="nav-link active listasMenuLinks" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+        </nav>
+        <div class="bannerContacto">
+            <h1 class="contactTitle">Contáctanos</h1>
+        </div>
+    </header>
+    <main class="contact">
+            <section class="form">
+                    <form action="/action_page.php" autocomplete="on">
+                        <fieldset>
+                            <legend>Formulario de contacto</legend>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" placeholder="nombre" required>
+                            <br><br>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" placeholder="apellido" required>
+                            <br><br>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="email" required>
+                            <br><br>
+                            <label for="nacionalidad">Selecciona tu nacionalidad</label>
+                            <input type="radio" id="argentina" itemid="nacionalidad" value="argentina">Argentina
+                            <input type="radio" id="españa" itemid="nacionalidad" value="españa">España
+                            <input type="radio" id="brasil" itemid="nacionalidad" value="brasil">Brasil
+                            <input type="radio" id="otro" itemid="nacionalidad" value="otro">Otro
+                            <br><br>
+                            <label for="consulta">Tema de tu consulta</label>
+                            <input type="checkbox" id="tema1" name="tema1" value="entrenamiento">Entrenamiento
+                            <input type="checkbox" id="tema2" name="tema2" value="nutricion">Nutrición
+                            <input type="checkbox" id="tema3" name="tema3" value="salud">Salud
+                            <br><br>
+                            <label for="consulta">Escribe tu consulta</label>
+                            <br><br>
+                            <textarea name="consulta" id="consulta" cols="30" rows="10" minlength="1" maxlength="300" required></textarea>
+                            <br><br>
+                            <input type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+            </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <a class="footerContacto">
+                <h3 class="contactoFooter" href="contacto.html">Contacto</h3>
+                <ul class="footerContactoList">
+                    <li>+540115148963</li>
+                    <li>gotrain@info.com.ar</li>
+                </ul>
+            </a>
+        </div>
+        <a class="footerTitle" href="index.html">
+            <h4>Gotrain</h4>
+        </a>
+        <div class="footerRedes">
+            <h3>Redes Sociales</h3>
+            <a class="footerRedesLinks" href="https://www.instagram.com/">
+                <img class="footerRedesImg" src="img/instagram.png" alt="logo de la red social instagram">
+            </a>
+            <a class="footerRedesLinks" href="https://www.facebook.com/">
+                <img class="footerRedesImg" src="img/facebook.png" alt="logo de la red social facebook">
+            </a>
+            <a class="footerRedesLinks" href="https://www.twitter.com/">
+                <img class="footerRedesImg" src="img/twitter.png" alt="logo de la red social twitter">
+            </a>
+        </div>
+    </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

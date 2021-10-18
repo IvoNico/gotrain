@@ -1,0 +1,105 @@
+@mixin cards ($area){
+    grid-area: $area;
+    box-shadow: $box-shadowsombra;       /*sensacion de profundidad*/
+    border-radius: 2%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    max-width: 1024px;
+}
+@mixin infocard {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px;
+}
+body{
+    main{
+        .nutricion{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 0.5fr;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "nutricionSuperavit nutricionSuperavit nutricionSuperavit"
+            "nutricionMantenimiento nutricionMantenimiento nutricionMantenimiento"
+            "nutricionDeficit nutricionDeficit nutricionDeficit";
+            .nutricionSuperavit{
+                @include cards (nutricionSuperavit);
+                .imgNutricion{
+                    width: 200px;
+                    border-radius: 5%;
+                }
+                .title{
+                    text-decoration: none;
+                    color: black;
+                    display: flex;
+                    justify-content: center;
+                    font-family: $title-font;
+                    margin-left: 10px;
+                    margin-bottom: 15px;
+                }
+                .nutricionSuperavitInfo{
+                    @include infocard();
+                }
+            }
+            .nutricionMantenimiento{
+                @include cards (nutricionMantenimiento);
+                .title{
+                    @extend .title;
+                }
+                .nutricionMantenimientoInfo{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 30px;
+                    margin: 30px;
+                    }
+                .imgNutricion{
+                    width: 200px;
+                    border-radius: 5%;
+                }
+            }
+            .nutricionDeficit{
+                @include cards (nutricionDeficit);
+                .title{
+                    @extend .title;
+                }
+                .nutricionDeficitInfo{
+                    @include infocard();
+                }
+                .imgNutricion{
+                    width: 200px;
+                    border-radius: 5%;
+                }
+            }
+            .nutricionDeficit:hover, .nutricionMantenimiento:hover, .nutricionSuperavit:hover{
+                transform: scale(1.1, 1.1);          /*expandir elemento*/
+                transition: all 1.5s ease;      /*velocidad a la que cambia el elemento*/
+            }
+        }
+        .trainDown{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            background-color: #ffffff;
+            margin-bottom: 150px;
+            .trainDownInfo{
+                color: #000000;
+                display: flex;
+                text-align: center;
+                font-size: 1000px;
+                align-items: center;
+                .title__inspiracio{
+                    display: flex;
+                    justify-content: center;
+                    font-family: $title-font;
+                    font-size: 6rem;
+                    margin-bottom: 35px;
+                }   
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+body{
+    main{
+        .train{
+            background-attachment: fixed;
+        }
+        .train__dieta, .train__entrenar, .train__salud{
+            box-shadow: $box-shadowsombra;       /*sensacion de profundidad*/
+            border-radius: 2%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            max-width: 1024px;
+        }
+        .train__dieta:hover, .train__entrenar:hover, .train__salud:hover{
+            transform: scale(1.1, 1.1);
+            transition: all 1.5s ease;
+        }
+        .train__salud{
+            margin-bottom: 50px;
+        }
+        .video__index{
+            border-radius: 5%;
+            width: 200px;
+        }
+        .train__dieta--info, .train__entrenar--info, .train__salud--info{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            margin: 30px;
+            color: black;
+        }
+        .imagen__index{
+            width: 200px;
+            height: 33vh;
+            border-radius: 5%;
+        }
+        .img__motivacion{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            width: 35rem;
+            border-radius: 5%;
+        }
+        
+        .index__down{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            max-width: 1300px;
+            box-shadow: 5px 5px 20px 5px rgba(55, 53, 77, 0.582);
+            background-color: #000000;
+            margin-top: 150px;
+            margin-bottom: 150px;
+            border-radius: 2%;
+        }
+        .index__down--info{
+            color: $cool-yelow;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .banner__info--title{
+            font: $title-font;
+            font-size: ($font-size/2);
+        }
+        .index__down--info h2 {
+            font-size: ($font-size/2);
+            color: $cool-yelow;
+        }
+        .title{
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: center;
+            font: $title-font;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+        @keyframes aparecer {     /*Animación para que aparezco el texto*/
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+        opacity: 0;
+        }
+        }
+    }
+}
