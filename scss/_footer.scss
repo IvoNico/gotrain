@@ -23,8 +23,7 @@ body{
             text-decoration: none;
         }
         .footerContacto{
-            text-align: center;
-            text-decoration: none;
+            @extend .footerContactoList;
             color: black;
         }
         .footerRedesImg{
