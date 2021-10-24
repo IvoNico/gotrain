@@ -9,6 +9,12 @@
     justify-content: center;
     margin-bottom: 25px;
     max-width: 1024px;
+    text-decoration: none;
+    color: black;
+    &:hover{
+        transform: scale(2.1, 2.1);          /*expandir elemento*/
+        transition: all 1.5s ease;      /*velocidad a la que cambia el elemento*/
+    }
 }
 @mixin infocard {
     display: flex;
@@ -20,7 +26,7 @@ body{
     main{
         .nutricion{
             display: grid;
-            grid-template-rows: 1fr 1fr 1fr 0.5fr;
+            grid-template-rows: 3 fr 3 fr 2fr;
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: 
             "nutricionSuperavit nutricionSuperavit nutricionSuperavit"
@@ -63,6 +69,7 @@ body{
             }
             .nutricionDeficit{
                 @include cards (nutricionDeficit);
+                margin-bottom: 150px;
                 .title{
                     @extend .title;
                 }
@@ -73,10 +80,6 @@ body{
                     width: 200px;
                     border-radius: 5%;
                 }
-            }
-            .nutricionDeficit:hover, .nutricionMantenimiento:hover, .nutricionSuperavit:hover{
-                transform: scale(1.1, 1.1);          /*expandir elemento*/
-                transition: all 1.5s ease;      /*velocidad a la que cambia el elemento*/
             }
         }
         .trainDown{
@@ -103,3 +106,4 @@ body{
         }
     }
 }
+

@@ -10,7 +10,8 @@ body{
         }
         .banner__info--title{
             font: $title-font;
-            font-size: $font-size;
+            font-size: ($font-size)+40;
+            margin-top: 90px;
             margin-bottom: 20px;
         }
         .banner__info{
@@ -20,22 +21,24 @@ body{
             position:absolute;       /*colocar texto por encima de la imagen*/
             color: white;
             margin-bottom: 150px;
-            margin-top: 200px;
+            margin-top: 150px;
         }
-        .banner__info--text{
-            width: 700px;
-            font-size: ($font-size/2)-15;
-            padding-right: 210px;
-            animation-duration: 10s;
-            animation-name: aparecer;
-            animation-iteration-count:initial;
-        }
-        .banner__scroll--img{
-            width: 60px;
-            margin: 0 auto;
+        .banner__info--contenido{
             display: flex;
             flex-direction: column;
-            margin-left: 150px;
+            align-items: center;
+            .banner__info--text{
+                width: 900px;
+                font-size: ($font-size/2);
+                padding-right: 210px;
+                animation-duration: 10s;
+                animation-name: aparecer;
+                animation-iteration-count:initial;
+            }
+            .banner__scroll--img{
+                margin-right: 300px;
+                width: 60px;
+            }
         }
     }
 }

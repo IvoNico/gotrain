@@ -63,6 +63,101 @@ header .listasMenuEntrenar:hover .listasMenuEntrenamientos {
 header .listasMenuLinks:hover {
   color: #ffe787; }
 
+header .banner__entrenamiento {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(/img/entrenamiento-pesas.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 150px; }
+  header .banner__entrenamiento .banner__title {
+    display: flex;
+    justify-content: center;
+    font-family: "Urbanist", sans-serif;
+    align-items: center;
+    color: #ffe787;
+    margin-bottom: 100px;
+    font-size: 150px;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: initial; }
+
+header .bannerNutricion {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(/img/nutricion-fideos.webp);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 150px; }
+  header .bannerNutricion .banner__title {
+    display: flex;
+    justify-content: center;
+    font-family: "Urbanist", sans-serif;
+    align-items: center;
+    color: white;
+    margin-bottom: 100px;
+    font-size: 150px;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: initial; }
+
+header .bannerContacto {
+  display: flex;
+  justify-content: space-around;
+  background: black;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 150px; }
+  header .bannerContacto .banner__title {
+    display: flex;
+    justify-content: center;
+    font-family: "Urbanist", sans-serif;
+    align-items: center;
+    color: white;
+    margin-bottom: 100px;
+    font-size: 150px;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: initial; }
+
+header .bannerSalud {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(/img/saludfondo.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 150px; }
+  header .bannerSalud .banner__title {
+    display: flex;
+    justify-content: center;
+    font-family: "Urbanist", sans-serif;
+    align-items: center;
+    color: #ffe787;
+    margin-bottom: 100px;
+    font-size: 100px;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+    padding: 100px; }
+
+header .rutinasTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  font-size: 70px;
+  font-family: 'Urbanist', sans-serif; }
+
 body header .banner {
   background-image: url(./img/hombre-fitness.jpg);
   background-size: cover;
@@ -73,7 +168,8 @@ body header .banner {
 
 body header .banner__info--title {
   font: "Urbanist", sans-serif;
-  font-size: 100px;
+  font-size: 140px;
+  margin-top: 90px;
   margin-bottom: 20px; }
 
 body header .banner__info {
@@ -84,22 +180,22 @@ body header .banner__info {
   /*colocar texto por encima de la imagen*/
   color: white;
   margin-bottom: 150px;
-  margin-top: 200px; }
+  margin-top: 150px; }
 
-body header .banner__info--text {
-  width: 700px;
-  font-size: 35px;
-  padding-right: 210px;
-  animation-duration: 10s;
-  animation-name: aparecer;
-  animation-iteration-count: initial; }
-
-body header .banner__scroll--img {
-  width: 60px;
-  margin: 0 auto;
+body header .banner__info--contenido {
   display: flex;
   flex-direction: column;
-  margin-left: 150px; }
+  align-items: center; }
+  body header .banner__info--contenido .banner__info--text {
+    width: 900px;
+    font-size: 50px;
+    padding-right: 210px;
+    animation-duration: 10s;
+    animation-name: aparecer;
+    animation-iteration-count: initial; }
+  body header .banner__info--contenido .banner__scroll--img {
+    margin-right: 300px;
+    width: 60px; }
 
 body main .train {
   background-attachment: fixed; }
@@ -173,7 +269,7 @@ body main .index__down--info h2 {
   font-size: 50px;
   color: #ffe787; }
 
-body main .title, body main .entrenamientos__resistencia--info .entrenamientos__resistencia .title, body main .entrenamientos__fuerza--info .entrenamientos__fuerza .title, body main .nutricion .nutricionMantenimiento .title, body main .nutricion .nutricionDeficit .title {
+body main .title, body main .nutricion .nutricionMantenimiento .title, body main .nutricion .nutricionDeficit .title, body main .salud .saludBeneficios .title {
   text-decoration: none;
   color: black;
   display: flex;
@@ -208,13 +304,11 @@ body .footer {
     margin-left: 300px;
     margin-right: 300px;
     font-size: 30px; }
-  body .footer .footerContactoList {
+  body .footer .footerContactoList, body .footer .footerContacto {
     list-style: none;
     text-align: left;
     text-decoration: none; }
   body .footer .footerContacto {
-    text-align: center;
-    text-decoration: none;
     color: black; }
   body .footer .footerRedesImg {
     width: 25px; }
@@ -381,7 +475,7 @@ body .footer {
 body main .entrenamientos {
   margin-bottom: 150px; }
 
-body main .entrenamientos__hipertrofia--info, body main .entrenamientos__resistencia--info, body main .entrenamientos__fuerza--info {
+body main .entrenamientos__card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -390,7 +484,7 @@ body main .entrenamientos__hipertrofia--info, body main .entrenamientos__resiste
   color: black;
   margin-left: 30px;
   margin-right: 10px; }
-  body main .entrenamientos__hipertrofia--info .entrenamientos__hipertrofia, body main .entrenamientos__resistencia--info .entrenamientos__hipertrofia, body main .entrenamientos__fuerza--info .entrenamientos__hipertrofia, body main .entrenamientos__resistencia--info .entrenamientos__resistencia, body main .entrenamientos__fuerza--info .entrenamientos__fuerza {
+  body main .entrenamientos__card .entrenamientos__card--info {
     box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
     /*sensacion de profundidad*/
     border-radius: 2%;
@@ -402,10 +496,10 @@ body main .entrenamientos__hipertrofia--info, body main .entrenamientos__resiste
     text-decoration: none;
     margin-bottom: 25px;
     max-width: 1024px; }
-    body main .entrenamientos__hipertrofia--info .entrenamientos__hipertrofia .img__entrenamientos, body main .entrenamientos__resistencia--info .entrenamientos__hipertrofia .img__entrenamientos, body main .entrenamientos__resistencia--info .entrenamientos__resistencia .img__entrenamientos, body main .entrenamientos__fuerza--info .entrenamientos__hipertrofia .img__entrenamientos, body main .entrenamientos__fuerza--info .entrenamientos__fuerza .img__entrenamientos {
+    body main .entrenamientos__card .entrenamientos__card--info .img__entrenamientos {
       width: 200px;
       border-radius: 5%; }
-    body main .entrenamientos__hipertrofia--info .entrenamientos__hipertrofia .title, body main .entrenamientos__resistencia--info .entrenamientos__hipertrofia .title, body main .entrenamientos__fuerza--info .entrenamientos__hipertrofia .title, body main .entrenamientos__resistencia--info .entrenamientos__resistencia .title, body main .entrenamientos__fuerza--info .entrenamientos__fuerza .title {
+    body main .entrenamientos__card .entrenamientos__card--info .title {
       text-decoration: none;
       color: black;
       display: flex;
@@ -413,18 +507,12 @@ body main .entrenamientos__hipertrofia--info, body main .entrenamientos__resiste
       font-family: "Urbanist", sans-serif;
       margin-left: 10px;
       margin-bottom: 15px; }
-    body main .entrenamientos__hipertrofia--info .entrenamientos__hipertrofia .entrenamientos__contenido, body main .entrenamientos__resistencia--info .entrenamientos__hipertrofia .entrenamientos__contenido, body main .entrenamientos__fuerza--info .entrenamientos__hipertrofia .entrenamientos__contenido, body main .entrenamientos__resistencia--info .entrenamientos__resistencia .entrenamientos__contenido, body main .entrenamientos__fuerza--info .entrenamientos__fuerza .entrenamientos__contenido {
+    body main .entrenamientos__card .entrenamientos__card--info .entrenamientos__contenido {
       display: flex;
       flex-direction: column;
       padding: 30px;
       margin: 30px;
       font-size: 20px; }
-
-body main .entrenamientos__fuerza:hover, body main .entrenamientos__hipertrofia:hover, body main .entrenamientos__resistencia--info .entrenamientos__resistencia:hover, body main .entrenamientos__fuerza--info .entrenamientos__fuerza:hover, body main .entrenamientos__resistencia:hover {
-  transform: scale(1.1, 1.1);
-  /*expandir elemento*/
-  transition: all 1.5s ease;
-  /*velocidad a la que cambia el elemento*/ }
 
 body main .title__inspiracion {
   display: flex;
@@ -433,53 +521,15 @@ body main .title__inspiracion {
   font-size: 6rem;
   margin-bottom: 35px; }
 
-body header .banner__entrenamiento {
-  display: flex;
-  justify-content: space-around;
-  background-image: url(/img/entrenamiento-pesas.jpg);
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin-bottom: 150px; }
-  body header .banner__entrenamiento .entrenamientos__title {
-    display: flex;
-    justify-content: center;
-    font-family: "Urbanist", sans-serif;
-    align-items: center;
-    color: #ffe787;
-    margin-bottom: 100px;
-    font-size: 150px;
-    animation-duration: 8s;
-    animation-name: aparecer;
-    animation-iteration-count: initial; }
-
-body header .bannerNutricion {
-  display: flex;
-  justify-content: space-around;
-  background-image: url(/img/nutricion-fideos.webp);
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin-bottom: 150px; }
-  body header .bannerNutricion .nutricionTitle {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-    font-size: 150px;
-    font-family: "Urbanist", sans-serif;
-    align-items: center;
-    color: white;
-    animation-duration: 8s;
-    animation-name: aparecer;
-    animation-iteration-count: initial; }
+body main .entrenamientos__card:hover {
+  transform: scale(1.1, 1.1);
+  /*expandir elemento*/
+  transition: all 1.5s ease;
+  /*velocidad a la que cambia el elemento*/ }
 
 body main .nutricion {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 3 fr 3 fr 2fr;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "nutricionSuperavit nutricionSuperavit nutricionSuperavit" "nutricionMantenimiento nutricionMantenimiento nutricionMantenimiento" "nutricionDeficit nutricionDeficit nutricionDeficit"; }
   body main .nutricion .nutricionSuperavit {
@@ -493,7 +543,14 @@ body main .nutricion {
     align-items: center;
     justify-content: center;
     margin-bottom: 25px;
-    max-width: 1024px; }
+    max-width: 1024px;
+    text-decoration: none;
+    color: black; }
+    body main .nutricion .nutricionSuperavit:hover {
+      transform: scale(2.1, 2.1);
+      /*expandir elemento*/
+      transition: all 1.5s ease;
+      /*velocidad a la que cambia el elemento*/ }
     body main .nutricion .nutricionSuperavit .imgNutricion {
       width: 200px;
       border-radius: 5%; }
@@ -521,7 +578,14 @@ body main .nutricion {
     align-items: center;
     justify-content: center;
     margin-bottom: 25px;
-    max-width: 1024px; }
+    max-width: 1024px;
+    text-decoration: none;
+    color: black; }
+    body main .nutricion .nutricionMantenimiento:hover {
+      transform: scale(2.1, 2.1);
+      /*expandir elemento*/
+      transition: all 1.5s ease;
+      /*velocidad a la que cambia el elemento*/ }
     body main .nutricion .nutricionMantenimiento .nutricionMantenimientoInfo {
       display: flex;
       flex-direction: column;
@@ -541,7 +605,15 @@ body main .nutricion {
     align-items: center;
     justify-content: center;
     margin-bottom: 25px;
-    max-width: 1024px; }
+    max-width: 1024px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 150px; }
+    body main .nutricion .nutricionDeficit:hover {
+      transform: scale(2.1, 2.1);
+      /*expandir elemento*/
+      transition: all 1.5s ease;
+      /*velocidad a la que cambia el elemento*/ }
     body main .nutricion .nutricionDeficit .nutricionDeficitInfo {
       display: flex;
       flex-direction: column;
@@ -550,11 +622,6 @@ body main .nutricion {
     body main .nutricion .nutricionDeficit .imgNutricion {
       width: 200px;
       border-radius: 5%; }
-  body main .nutricion .nutricionDeficit:hover, body main .nutricion .nutricionMantenimiento:hover, body main .nutricion .nutricionSuperavit:hover {
-    transform: scale(1.1, 1.1);
-    /*expandir elemento*/
-    transition: all 1.5s ease;
-    /*velocidad a la que cambia el elemento*/ }
 
 body main .trainDown {
   margin: 0 auto;
@@ -575,3 +642,95 @@ body main .trainDown {
       font-family: "Urbanist", sans-serif;
       font-size: 6rem;
       margin-bottom: 35px; }
+
+body .rutinas .rutinasTablas {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin: 50px;
+  box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
+  margin-bottom: 150px; }
+  body .rutinas .rutinasTablas .rutinasTablasTitle {
+    font-size: 25px;
+    font-family: 'Urbanist', sans-serif; }
+  body .rutinas .rutinasTablas .rutinasTablasProgramas {
+    border: solid black;
+    margin-top: 50px;
+    background-color: #171612;
+    color: white;
+    margin: 25px; }
+    body .rutinas .rutinasTablas .rutinasTablasProgramas th, body .rutinas .rutinasTablas .rutinasTablasProgramas td {
+      border: solid black;
+      padding: 10px; }
+    body .rutinas .rutinasTablas .rutinasTablasProgramas .rutinasTablasEjercicios {
+      color: #ffe787; }
+
+body main .rutinasVideo {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 35px;
+  box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
+  margin-bottom: 40px;
+  color: white; }
+  body main .rutinasVideo .rutinasVideoTitle {
+    font-size: 25px;
+    font-family: 'Urbanist', sans-serif;
+    color: black; }
+  body main .rutinasVideo .rutinasVideoContenido {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 80px; }
+
+body main .salud {
+  display: grid;
+  grid-template-rows: 1fr 1fr 0.5fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "saludEjercicio saludEjercicio saludEjercicio" "saludBeneficios saludBeneficios saludBeneficios"; }
+  body main .salud .saludEjercicio {
+    grid-area: saludEjercicio;
+    box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
+    /*sensacion de profundidad*/
+    border-radius: 2%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    max-width: 1024px; }
+    body main .salud .saludEjercicio .imgSalud {
+      width: 200px; }
+    body main .salud .saludEjercicio .title {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      justify-content: center;
+      font-family: "Urbanist", sans-serif;
+      margin-left: 10px;
+      margin-bottom: 15px; }
+    body main .salud .saludEjercicio .saludEjercicioInfo {
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      margin: 30px; }
+  body main .salud .saludBeneficios {
+    grid-area: saludBeneficios;
+    box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
+    /*sensacion de profundidad*/
+    border-radius: 2%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    max-width: 1024px; }
+    body main .salud .saludBeneficios .imgSalud {
+      width: 200px; }

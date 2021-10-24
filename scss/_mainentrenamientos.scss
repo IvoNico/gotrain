@@ -3,7 +3,7 @@ body{
         .entrenamientos{
             margin-bottom: 150px;
         }
-        .entrenamientos__hipertrofia--info{
+        .entrenamientos__card{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -12,7 +12,7 @@ body{
             color: black;
             margin-left: 30px;
             margin-right: 10px;
-            .entrenamientos__hipertrofia{
+            .entrenamientos__card--info{
                 box-shadow:  $box-shadowsombra;       /*sensacion de profundidad*/
                 border-radius: 2%;
                 margin: 0 auto;
@@ -45,40 +45,6 @@ body{
                 }
             }
         }
-        .entrenamientos__resistencia--info{
-            @extend .entrenamientos__hipertrofia--info;
-            .entrenamientos__resistencia{
-                @extend .entrenamientos__hipertrofia;
-                .title{
-                    @extend .title;
-                }
-                .entrenamientos__contenido{
-                    @extend .entrenamientos__contenido;
-                }
-            }
-            .img__entrenamientos{
-                @extend .img__entrenamientos;
-            }
-        }
-        .entrenamientos__fuerza--info{
-            @extend .entrenamientos__hipertrofia--info;
-            .entrenamientos__fuerza{
-                @extend .entrenamientos__hipertrofia;
-                .title{
-                    @extend .title;
-                }
-                .entrenamientos__contenido{
-                    @extend .entrenamientos__contenido;
-                }
-            }
-            .img__entrenamientos{
-                @extend .img__entrenamientos;
-            }
-        }
-        .entrenamientos__fuerza:hover, .entrenamientos__hipertrofia:hover, .entrenamientos__resistencia:hover{
-            transform: scale(1.1, 1.1);          /*expandir elemento*/
-            transition: all 1.5s ease;      /*velocidad a la que cambia el elemento*/
-        }
         .title__inspiracion{
             display: flex;
             justify-content: center;
@@ -86,5 +52,10 @@ body{
             font-size: 6rem;
             margin-bottom: 35px;
         }
+        .entrenamientos__card:hover{
+            transform: scale(1.1, 1.1);          /*expandir elemento*/
+            transition: all 1.5s ease;      /*velocidad a la que cambia el elemento*/
+        }
     }
+
 }

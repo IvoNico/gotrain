@@ -1,0 +1,57 @@
+body{
+    .rutinas{
+        .rutinasTablas{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            margin: 50px;
+            box-shadow:  5px 5px 20px 5px rgba(69,67,96,0.1);
+            margin-bottom: 150px;
+            .rutinasTablasTitle{
+                font-size: 25px;
+                font-family: 'Urbanist', sans-serif;
+            }
+            .rutinasTablasProgramas{
+                border: solid black;
+                margin-top: 50px;
+                background-color: #171612;
+                color: white;
+                margin: 25px;
+                th, td{
+                    border: solid black;
+                    padding: 10px;
+                }
+                .rutinasTablasEjercicios{
+                    color:#ffe787
+                }
+            }
+        }
+    }
+    main{
+        .rutinasVideo{
+            width: 700px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 35px;
+            box-shadow:  5px 5px 20px 5px rgba(69,67,96,0.1);
+            margin-bottom: 40px;
+            color: white;
+            .rutinasVideoTitle{
+                font-size: 25px;
+                font-family: 'Urbanist', sans-serif;
+                color: black;
+            }
+            .rutinasVideoContenido{
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                margin-top: 25px;
+                margin-bottom: 80px;
+            }
+        }
+    }
+}

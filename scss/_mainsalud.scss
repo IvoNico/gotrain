@@ -1,0 +1,58 @@
+@mixin cards ($area){
+    grid-area: $area;
+    box-shadow: $box-shadowsombra;       /*sensacion de profundidad*/
+    border-radius: 2%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    max-width: 1024px;
+}
+$imagen:200px;
+body{
+    main{
+        .salud{
+            display: grid;
+            grid-template-rows: 1fr 1fr 0.5fr;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "saludEjercicio saludEjercicio saludEjercicio"
+            "saludBeneficios saludBeneficios saludBeneficios";
+            .saludEjercicio{
+                @include cards (saludEjercicio);
+                .imgSalud{
+                    width: $imagen;
+                }
+                .title{
+                    text-decoration: none;
+                    color: black;
+                    display: flex;
+                    justify-content: center;
+                    font-family: $title-font;
+                    margin-left: 10px;
+                    margin-bottom: 15px;
+                }
+                .saludEjercicioInfo{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 30px;
+                    margin: 30px;
+                }
+            }
+            .saludBeneficios{ 
+                @include cards(saludBeneficios);
+                .imgSalud{
+                    width: $imagen;
+                }
+                .title{
+                    @extend .title;
+                }
+                .saludEjercicioInfo{
+                    @extend .saludEjercicioInfo
+                }   
+            }
+        }
+    }
+}
