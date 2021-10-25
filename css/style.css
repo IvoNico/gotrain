@@ -734,3 +734,23 @@ body main .salud {
     max-width: 1024px; }
     body main .salud .saludBeneficios .imgSalud {
       width: 200px; }
+
+body .contact {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 35px;
+  justify-content: space-around; }
+  body .contact .form {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: solid black;
+    height: 119vh;
+    padding: 5rem;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.308);
+    margin-bottom: 40px;
+    border-radius: 5%; }
+    body .contact .form .input__email {
+      margin-left: 26px; }
