@@ -6,11 +6,11 @@ body{
             text-align: center;
             justify-content: center;
             margin: 50px;
-            box-shadow:  5px 5px 20px 5px rgba(69,67,96,0.1);
+            box-shadow:  $box-shadowsombra;
             margin-bottom: 150px;
             .rutinasTablasTitle{
-                font-size: 25px;
-                font-family: 'Urbanist', sans-serif;
+                font-size:($font-size)-75;
+                font-family: $title-font;
             }
             .rutinasTablasProgramas{
                 border: solid black;
@@ -23,7 +23,7 @@ body{
                     padding: 10px;
                 }
                 .rutinasTablasEjercicios{
-                    color:#ffe787
+                    color:$cool-yelow
                 }
             }
         }
@@ -37,12 +37,12 @@ body{
             justify-content: center;
             text-align: center;
             margin-bottom: 35px;
-            box-shadow:  5px 5px 20px 5px rgba(69,67,96,0.1);
+            box-shadow:  $box-shadowsombra;
             margin-bottom: 40px;
             color: white;
             .rutinasVideoTitle{
-                font-size: 25px;
-                font-family: 'Urbanist', sans-serif;
+                font-size: ($font-size)-75;
+                font-family: $title-font;
                 color: black;
             }
             .rutinasVideoContenido{

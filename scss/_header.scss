@@ -35,7 +35,7 @@ header{
         
     }
     .menuLogo{
-        font-size: 35px;
+        font-size:($font-size)-65;
         margin-left: 20px;
         text-decoration: none;
         color: white;
@@ -77,13 +77,13 @@ header{
         color: $cool-yelow;
     }
     .banner__entrenamiento{
-        @include banners(url(/img/entrenamiento-pesas.jpg));
+        @include banners(url(../img/entrenamiento-pesas.jpg));
         .banner__title{
             @include bannersTitle(($font-size)+50,$cool-yelow);
         }
     }
     .bannerNutricion{
-        @include banners(url(/img/nutricion-fideos.webp));
+        @include banners(url(../img/nutricion-fideos.webp));
             .banner__title{
                 @include bannersTitle(($font-size)+50, white);
             }
@@ -101,7 +101,7 @@ header{
         }
     }
     .bannerSalud{
-        @include banners(url(/img/saludfondo.jpg));
+        @include banners(url(../img/saludfondo.jpg));
         .banner__title{
             @include bannersTitle(($font-size), $cool-yelow);
             padding: 100px;
@@ -113,7 +113,7 @@ header{
         justify-content: center;
         align-items: center;
         height: 30vh;
-        font-size: 70px;
+        font-size: ($font-size)-30;
         font-family: 'Urbanist', sans-serif;
     }
 }
