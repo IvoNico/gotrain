@@ -316,69 +316,42 @@ body .footer {
     text-decoration: none; }
 
 @media only screen and (max-width: 834px) and (min-width: 415px) {
+  body header .menu {
+    width: 500px;
+    max-width: 834px; }
   body header .banner {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    height: 200vh;
-    background-size: cover;
-    width: 100%; }
-  body header .bannerInfo {
-    margin: 0 auto;
-    display: flex;
-    position: absolute;
-    /*colocar texto por encima de la imagen*/
-    color: white;
-    margin-bottom: 150px;
-    margin-top: 100px;
-    font-size: 25px;
-    margin-left: 50px;
-    max-width: 300px; }
-  body header .bannerInfoText {
-    width: 200px;
-    font-size: 5px; }
-  body header .bannerScroll {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 10px;
-    color: white; }
-  body main .trainDieta, body main .trainEntrenar, body main .trainSalud {
-    box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
-    /*sensacion de profundidad*/
-    border-radius: 2%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    margin-bottom: 20px;
-    margin-right: 200px; }
-  body main .trainDietaInfo, body main .trainEntrenarInfo, body main .trainSaludInfo {
-    margin: 80px;
-    font-size: 20px; }
-  body main .videoIndex {
+    width: 500px;
+    max-width: 834px; }
+  body header .banner__info {
+    margin-top: 50px; }
+    body header .banner__info .banner__info--title {
+      font-size: 100px; }
+    body header .banner__info .banner__info--contenido .banner__info--text {
+      font-size: 30px;
+      width: 500px; }
+    body header .banner__info .banner__info--contenido .banner__scroll--img {
+      width: 40px; }
+  body main .train {
+    width: 500px; }
+    body main .train .train__dieta, body main .train .train__entrenar, body main .train .train__salud {
+      display: flex;
+      flex-direction: column; }
+      body main .train .train__dieta .imagen__index, body main .train .train__entrenar .imagen__index, body main .train .train__salud .imagen__index {
+        height: 250px;
+        margin-bottom: 25px; }
+  body main .video__index {
     width: 200px; }
-  body main .indexDown {
+  body main .index__down {
+    width: 500px;
+    max-width: 834px;
     display: flex;
-    flex-direction: column;
-    max-width: 900px;
-    margin-left: 0; }
-  body main .imgMotivacion {
-    width: 425px;
-    display: flex;
-    margin: 0 auto;
-    margin-right: 200px; }
-  body main .indexDownInfo {
-    font-size: 15px;
-    margin-right: 150px;
-    display: flex;
-    margin: 0 auto;
-    margin-right: 35px; }
+    flex-direction: column; }
+    body main .index__down .img__motivacion {
+      width: 500px; }
+    body main .index__down .index__down--info {
+      width: 450px;
+      display: flex;
+      justify-content: center; }
   body main .entrenamientosTitle {
     display: flex;
     text-align: center;
@@ -425,6 +398,8 @@ body .footer {
   body main .titleInspiracion {
     font-size: 2rem; }
   body .footer {
+    width: 500px;
+    max-width: 834px;
     height: 100px;
     align-items: center; }
     body .footer .footerTitle {

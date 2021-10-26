@@ -2,79 +2,61 @@
 @media only screen and (max-width: 834px) and (min-width: 415px){
     body{
         header{
+            .menu{
+                width: 500px;
+                max-width: 834px;
+            }
             .banner{
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-                height: 200vh;
-                background-size: cover;
-                width: 100%;
+                width: 500px;
+                max-width: 834px;
             }
-            .bannerInfo{
-                margin: 0 auto;
-                display: flex;
-                position:absolute;       /*colocar texto por encima de la imagen*/
-                color: white;
-                margin-bottom: 150px;
-                margin-top: 100px;
-                font-size: ($font-size/2)-25;
-                margin-left: 50px;
-                max-width: 300px;
-            }
-            .bannerInfoText{
-                width: 200px;
-                font-size: ($font-size/5)-15px;
-            }
-            .bannerScroll{
-                margin: 0 auto;
-                display: flex;
-                flex-direction:row;
-                position:absolute; 
-                text-decoration: none;
-                font-size: ($font-size/5);
-                padding: 10px;
-                color: white;
+            .banner__info{
+                margin-top: 50px;
+                .banner__info--title{
+                    font-size: $font-size;
+                }
+                .banner__info--contenido{
+                    .banner__info--text{
+                        font-size: ($font-size)-70;
+                        width: 500px;
+                    }
+                    .banner__scroll--img{
+                        width: 40px;
+                    }
+                }
             }
         }
         main{ 
-            .trainDieta, .trainEntrenar, .trainSalud{
-                box-shadow:  $box-shadowsombra;       /*sensacion de profundidad*/
-                border-radius: 2%;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                width: 400px;
-                margin-bottom: 20px;
-                margin-right: 200px;
+            .train{
+                width: 500px;
+                .train__dieta, .train__entrenar, .train__salud{
+                    display: flex;
+                    flex-direction: column;
+                    .imagen__index{
+                        height: 250px;
+                        margin-bottom: 25px;
+                    }
+                }
             }
-            .trainDietaInfo, .trainEntrenarInfo, .trainSaludInfo{
-                margin: 80px;
-                font-size: ($font-size/5);
-            }
-            .videoIndex{
+            .video__index{
                 width: 200px;
             }
-            .indexDown{
+            
+            .index__down{
+                width: 500px;
+                max-width: 834px;
                 display: flex;
                 flex-direction: column;
-                max-width: 900px;
-                margin-left: 0;
+                .img__motivacion{
+                    width: 500px;
+                }
+                .index__down--info{
+                    width: 450px;
+                    display: flex;
+                    justify-content: center;
+                }
             }
-            .imgMotivacion{
-                width: 425px;
-                display: flex;
-                margin: 0 auto;
-                margin-right: 200px;
-            }
-            .indexDownInfo{
-                font-size: ($font-size/5)-5;
-                margin-right: 150px;
-                display: flex;
-                margin: 0 auto;
-                margin-right: 35px;
-            }
+            
             .entrenamientosTitle{
                 display: flex;
                 text-align: center;
@@ -130,6 +112,8 @@
             }
         }
         .footer{
+            width: 500px;
+            max-width: 834px;
             height: 100px;
             align-items: center;
             .footerTitle{
