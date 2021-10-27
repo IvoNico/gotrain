@@ -315,20 +315,18 @@ body .footer {
   body .footer .footerRedesLinks {
     text-decoration: none; }
 
-@media only screen and (max-width: 834px) and (min-width: 415px) {
+@media only screen and (max-width: 415px) {
   body header .menu {
-    width: 500px;
-    max-width: 834px; }
+    width: 415px; }
   body header .banner {
-    width: 500px;
-    max-width: 834px; }
+    width: 500px; }
   body header .banner__info {
     margin-top: 50px; }
     body header .banner__info .banner__info--title {
       font-size: 100px; }
     body header .banner__info .banner__info--contenido .banner__info--text {
       font-size: 30px;
-      width: 500px; }
+      width: 415px; }
     body header .banner__info .banner__info--contenido .banner__scroll--img {
       width: 40px; }
   body main .train {
@@ -342,14 +340,14 @@ body .footer {
   body main .video__index {
     width: 200px; }
   body main .index__down {
-    width: 500px;
+    width: 415px;
     max-width: 834px;
     display: flex;
     flex-direction: column; }
     body main .index__down .img__motivacion {
-      width: 500px; }
+      width: 415px; }
     body main .index__down .index__down--info {
-      width: 450px;
+      width: 400px;
       display: flex;
       justify-content: center; }
   body main .entrenamientosTitle {
@@ -398,8 +396,7 @@ body .footer {
   body main .titleInspiracion {
     font-size: 2rem; }
   body .footer {
-    width: 500px;
-    max-width: 834px;
+    width: 415px;
     height: 100px;
     align-items: center; }
     body .footer .footerTitle {
@@ -407,7 +404,7 @@ body .footer {
     body .footer .footerRedes {
       margin-left: 100px; } }
 
-@media screen and (max-width: 1024px) and (min-width: 834px) {
+@media screen and (max-width: 1024px) {
   body header .listas {
     margin: 0 auto;
     display: flex;
