@@ -265,7 +265,7 @@ body main .banner__info--title {
   font: "Urbanist", sans-serif;
   font-size: 50px; }
 
-body main .index__down--info h2 {
+body main .index__down--info p {
   font-size: 50px;
   color: #ffe787; }
 
@@ -430,12 +430,6 @@ body .footer {
   body main .trainDietaInfo, body main .trainEntrenarInfo, body main .trainSaludInfo {
     margin-top: 15px;
     font-size: 20px; }
-  body main .indexDown {
-    display: flex;
-    flex-direction: column;
-    width: 750px; }
-  body main .indexDownInfo {
-    font-size: 30px; }
   body .footer {
     height: 100px;
     align-items: center; }
@@ -501,28 +495,24 @@ body main .entrenamientos__card:hover {
 
 body main .nutricion {
   display: grid;
-  grid-template-rows: 3 fr 3 fr 2fr;
+  grid-template-rows: 3 fr 3 fr 1 fr;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "nutricionSuperavit nutricionSuperavit nutricionSuperavit" "nutricionMantenimiento nutricionMantenimiento nutricionMantenimiento" "nutricionDeficit nutricionDeficit nutricionDeficit"; }
   body main .nutricion .nutricionSuperavit {
     grid-area: nutricionSuperavit;
-    box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
-    /*sensacion de profundidad*/
-    border-radius: 2%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-    max-width: 1024px;
-    text-decoration: none;
-    color: black; }
-    body main .nutricion .nutricionSuperavit:hover {
-      transform: scale(2.1, 2.1);
-      /*expandir elemento*/
-      transition: all 1.5s ease;
-      /*velocidad a la que cambia el elemento*/ }
+    text-decoration: none; }
+    body main .nutricion .nutricionSuperavit .nutricionSuperavitCard {
+      box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
+      /*sensacion de profundidad*/
+      border-radius: 2%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+      max-width: 1024px;
+      color: black; }
     body main .nutricion .nutricionSuperavit .imgNutricion {
       width: 200px;
       border-radius: 5%; }
@@ -541,23 +531,19 @@ body main .nutricion {
       margin: 30px; }
   body main .nutricion .nutricionMantenimiento {
     grid-area: nutricionMantenimiento;
-    box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
-    /*sensacion de profundidad*/
-    border-radius: 2%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-    max-width: 1024px;
-    text-decoration: none;
-    color: black; }
-    body main .nutricion .nutricionMantenimiento:hover {
-      transform: scale(2.1, 2.1);
-      /*expandir elemento*/
-      transition: all 1.5s ease;
-      /*velocidad a la que cambia el elemento*/ }
+    text-decoration: none; }
+    body main .nutricion .nutricionMantenimiento .nutricionSuperavitCard {
+      box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
+      /*sensacion de profundidad*/
+      border-radius: 2%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+      max-width: 1024px;
+      color: black; }
     body main .nutricion .nutricionMantenimiento .nutricionMantenimientoInfo {
       display: flex;
       flex-direction: column;
@@ -568,24 +554,20 @@ body main .nutricion {
       border-radius: 5%; }
   body main .nutricion .nutricionDeficit {
     grid-area: nutricionDeficit;
-    box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
-    /*sensacion de profundidad*/
-    border-radius: 2%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-    max-width: 1024px;
     text-decoration: none;
-    color: black;
     margin-bottom: 150px; }
-    body main .nutricion .nutricionDeficit:hover {
-      transform: scale(2.1, 2.1);
-      /*expandir elemento*/
-      transition: all 1.5s ease;
-      /*velocidad a la que cambia el elemento*/ }
+    body main .nutricion .nutricionDeficit .nutricionSuperavitCard {
+      box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
+      /*sensacion de profundidad*/
+      border-radius: 2%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+      max-width: 1024px;
+      color: black; }
     body main .nutricion .nutricionDeficit .nutricionDeficitInfo {
       display: flex;
       flex-direction: column;
@@ -594,26 +576,22 @@ body main .nutricion {
     body main .nutricion .nutricionDeficit .imgNutricion {
       width: 200px;
       border-radius: 5%; }
+  body main .nutricion .nutricionDeficit:hover {
+    transform: scale(1.1, 1.1);
+    /*expandir elemento*/
+    transition: all 1.5s ease; }
+  body main .nutricion .nutricionSuperavitCard:hover {
+    transform: scale(1.1, 1.1);
+    /*expandir elemento*/
+    transition: all 1.5s ease; }
 
-body main .trainDown {
+body main .fobia .fobiaAlimenticia {
+  background-image: url(../img/fobia-alimenticia.jpg);
+  background-position: left;
+  background-size: cover;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  max-width: 1200px;
-  background-color: #ffffff;
-  margin-bottom: 150px; }
-  body main .trainDown .trainDownInfo {
-    color: #000000;
-    display: flex;
-    text-align: center;
-    font-size: 30rem;
-    align-items: center; }
-    body main .trainDown .trainDownInfo .title__inspiracio {
-      display: flex;
-      justify-content: center;
-      font-family: "Urbanist", sans-serif;
-      font-size: 6rem;
-      margin-bottom: 35px; }
+  height: 100vh; }
 
 body .rutinas .rutinasTablas {
   display: flex;
@@ -667,18 +645,23 @@ body main .salud {
   grid-template-areas: "saludEjercicio saludEjercicio saludEjercicio" "saludBeneficios saludBeneficios saludBeneficios"; }
   body main .salud .saludEjercicio {
     grid-area: saludEjercicio;
-    box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
-    /*sensacion de profundidad*/
-    border-radius: 2%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-    max-width: 1024px; }
+    text-decoration: none;
+    margin: 0 auto; }
+    body main .salud .saludEjercicio .saludCard {
+      box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
+      /*sensacion de profundidad*/
+      border-radius: 2%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+      max-width: 1024px;
+      color: black; }
     body main .salud .saludEjercicio .imgSalud {
-      width: 200px; }
+      width: 200px;
+      border-radius: 5%; }
     body main .salud .saludEjercicio .title {
       text-decoration: none;
       color: black;
@@ -694,18 +677,27 @@ body main .salud {
       margin: 30px; }
   body main .salud .saludBeneficios {
     grid-area: saludBeneficios;
-    box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
-    /*sensacion de profundidad*/
-    border-radius: 2%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-    max-width: 1024px; }
+    text-decoration: none;
+    margin: 0 auto; }
+    body main .salud .saludBeneficios .saludCard {
+      box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
+      /*sensacion de profundidad*/
+      border-radius: 2%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+      max-width: 1024px;
+      color: black; }
     body main .salud .saludBeneficios .imgSalud {
-      width: 200px; }
+      width: 200px;
+      border-radius: 5%; }
+  body main .salud .saludEjercicio:hover, body main .salud .saludBeneficios:hover {
+    transform: scale(1.1, 1.1);
+    /*expandir elemento*/
+    transition: all 1.5s ease; }
 
 body .contact {
   display: flex;

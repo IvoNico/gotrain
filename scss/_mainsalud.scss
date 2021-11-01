@@ -1,14 +1,23 @@
 @mixin cards ($area){
     grid-area: $area;
-    box-shadow: $box-shadowsombra;       /*sensacion de profundidad*/
-    border-radius: 2%;
+    text-decoration: none;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-    max-width: 1024px;
+    .saludCard{
+        box-shadow: $box-shadowsombra;       /*sensacion de profundidad*/
+        border-radius: 2%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        max-width: 1024px;
+        color: black;
+    }
+}
+@mixin hover{
+    transform: scale(1.1, 1.1);          /*expandir elemento*/
+    transition: all 1.5s ease;
 }
 $imagen:200px;
 body{
@@ -24,6 +33,7 @@ body{
                 @include cards (saludEjercicio);
                 .imgSalud{
                     width: $imagen;
+                    border-radius: 5%;
                 }
                 .title{
                     text-decoration: none;
@@ -45,6 +55,7 @@ body{
                 @include cards(saludBeneficios);
                 .imgSalud{
                     width: $imagen;
+                    border-radius: 5%
                 }
                 .title{
                     @extend .title;
@@ -53,6 +64,11 @@ body{
                     @extend .saludEjercicioInfo
                 }   
             }
+            .saludEjercicio:hover, .saludBeneficios:hover{
+                transform: scale(1.1, 1.1);          /*expandir elemento*/
+                transition: all 1.5s ease;
+            }
+            
         }
     }
 }

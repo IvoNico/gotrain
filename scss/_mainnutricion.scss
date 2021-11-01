@@ -1,19 +1,17 @@
 @mixin cards ($area){
     grid-area: $area;
-    box-shadow: $box-shadowsombra;       /*sensacion de profundidad*/
-    border-radius: 2%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-    max-width: 1024px;
     text-decoration: none;
-    color: black;
-    &:hover{
-        transform: scale(2.1, 2.1);          /*expandir elemento*/
-        transition: all 1.5s ease;      /*velocidad a la que cambia el elemento*/
+    .nutricionSuperavitCard{
+        box-shadow: $box-shadowsombra;       /*sensacion de profundidad*/
+        border-radius: 2%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        max-width: 1024px;
+        color: black;
     }
 }
 @mixin infocard {
@@ -26,7 +24,7 @@ body{
     main{
         .nutricion{
             display: grid;
-            grid-template-rows: 3 fr 3 fr 2fr;
+            grid-template-rows: 3 fr 3 fr 1 fr;
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: 
             "nutricionSuperavit nutricionSuperavit nutricionSuperavit"
@@ -81,27 +79,23 @@ body{
                     border-radius: 5%;
                 }
             }
+            .nutricionDeficit:hover{
+                transform: scale(1.1, 1.1);          /*expandir elemento*/
+                transition: all 1.5s ease;
+            }
+            .nutricionSuperavitCard:hover{
+                transform: scale(1.1, 1.1);          /*expandir elemento*/
+                transition: all 1.5s ease;
+            }
         }
-        .trainDown{
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            max-width: 1200px;
-            background-color: #ffffff;
-            margin-bottom: 150px;
-            .trainDownInfo{
-                color: #000000;
+        .fobia{
+            .fobiaAlimenticia{
+                background-image: url(../img/fobia-alimenticia.jpg);
+                background-position: left;
+                background-size: cover;
+                margin: 0 auto;
                 display: flex;
-                text-align: center;
-                font-size: 30rem;
-                align-items: center;
-                .title__inspiracio{
-                    display: flex;
-                    justify-content: center;
-                    font-family: $title-font;
-                    font-size: 6rem;
-                    margin-bottom: 35px;
-                }   
+                height: 100vh;
             }
         }
     }
