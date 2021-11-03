@@ -3,20 +3,21 @@
     body{
         header{
             .menu{
-                width: 415px;
+                width: 420px;
             }
             .banner{
-                width: 500px;
+                width: 420px;
             }
             .banner__info{
-                margin-top: 50px;
+                margin-top: 100px;
                 .banner__info--title{
                     font-size: $font-size;
+                    display: flex;
                 }
                 .banner__info--contenido{
                     .banner__info--text{
                         font-size: ($font-size)-70;
-                        width: 415px;
+                        width: 500px;
                     }
                     .banner__scroll--img{
                         width: 40px;
@@ -26,7 +27,8 @@
         }
         main{ 
             .train{
-                width: 500px;
+                margin: 0 auto;
+                width: 300px;
                 .train__dieta, .train__entrenar, .train__salud{
                     display: flex;
                     flex-direction: column;
@@ -41,15 +43,15 @@
             }
             
             .index__down{
-                width: 415px;
+                width: 350px;
                 max-width: 834px;
                 display: flex;
                 flex-direction: column;
                 .img__motivacion{
-                    width: 415px;
+                    width: 350px;
                 }
                 .index__down--info{
-                    width: 400px;
+                    font-size: 2rem;
                     display: flex;
                     justify-content: center;
                 }
