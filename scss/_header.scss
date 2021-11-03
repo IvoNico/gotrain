@@ -32,7 +32,7 @@ header{
         width: 100%;
         border-bottom: 1px solid $cool-yelow;   /*colocar borde inferior al menu*/
         position: fixed;
-        
+        z-index: 10;
     }
     .menuLogo{
         font-size:($font-size)-65;

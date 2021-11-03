@@ -18,7 +18,8 @@ header {
     width: 100%;
     border-bottom: 1px solid #ffe787;
     /*colocar borde inferior al menu*/
-    position: fixed; }
+    position: fixed;
+    z-index: 10; }
   header .menuLogo {
     font-size: 35px;
     margin-left: 20px;
@@ -589,7 +590,8 @@ body main .fobia .fobiaAlimenticia {
     margin: 0 auto;
     padding: 45px;
     margin-left: 800px;
-    margin-top: 200px; }
+    margin-top: 200px;
+    font-weight: bold; }
 
 body .rutinas .rutinasTablas {
   display: flex;
