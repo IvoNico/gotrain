@@ -15,9 +15,11 @@
         color: black;
     }
 }
-@mixin hover{
-    transform: scale(1.1, 1.1);          /*expandir elemento*/
-    transition: all 1.5s ease;
+@mixin info{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px;
 }
 $imagen:200px;
 body{
@@ -45,10 +47,7 @@ body{
                     margin-bottom: 15px;
                 }
                 .saludEjercicioInfo{
-                    display: flex;
-                    flex-direction: column;
-                    padding: 30px;
-                    margin: 30px;
+                    @include info();
                 }
             }
             .saludBeneficios{ 
@@ -60,15 +59,21 @@ body{
                 .title{
                     @extend .title;
                 }
-                .saludEjercicioInfo{
-                    @extend .saludEjercicioInfo
+                .saludBeneficiosInfo{
+                    @include info();
                 }   
             }
             .saludEjercicio:hover, .saludBeneficios:hover{
                 transform: scale(1.1, 1.1);          /*expandir elemento*/
                 transition: all 1.5s ease;
             }
-            
         }
+        .salud__inspiracion{
+            font-size: $font-size;
+            margin: 0 auto;
+            display: flex;
+            text-align: center;
+        }
+        
     }
 }

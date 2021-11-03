@@ -96,6 +96,13 @@ body{
                 margin: 0 auto;
                 display: flex;
                 height: 100vh;
+                .FobiaAlimenticiaTitle{
+                    font-size:($font-size)-30;
+                    margin: 0 auto;
+                    padding: 45px;
+                    margin-left: 800px;
+                    margin-top: 200px;
+                }
             }
         }
     }

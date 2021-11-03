@@ -7,156 +7,146 @@
 body {
   box-sizing: border-box; }
 
-header .menu {
-  background-color: black !important;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  height: 70px;
-  width: 100%;
-  border-bottom: 1px solid #ffe787;
-  /*colocar borde inferior al menu*/
-  position: fixed; }
-
-header .menuLogo {
-  font-size: 35px;
-  margin-left: 20px;
-  text-decoration: none;
-  color: white; }
-
-header .listas {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  /*elimina los puntos o subrayados de los items*/
-  text-decoration: none;
-  color: white;
-  padding-left: 50%;
-  align-items: center; }
-
-header .listasMenuLinks {
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  margin-right: 15px;
-  font-size: 20px;
-  margin-top: 5px; }
-
-header .listasMenuEntrenar {
-  font-size: 20px; }
-
-header .listasMenuEntrenamientos {
-  /*SUBMENU*/
-  position: absolute;
-  list-style: none;
-  background-color: #63624ebb;
-  text-align: left;
-  padding: 10px;
-  display: none; }
-
-header .listasMenuEntrenar:hover .listasMenuEntrenamientos {
-  /*se utiliza para que aparezca el menu al colocar el mouse encima*/
-  display: block;
-  color: #ffe787; }
-
-header .listasMenuLinks:hover {
-  color: #ffe787; }
-
-header .banner__entrenamiento {
-  display: flex;
-  justify-content: space-around;
-  background-image: url(../img/entrenamiento-pesas.jpg);
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin-bottom: 150px; }
-  header .banner__entrenamiento .banner__title {
-    display: flex;
-    justify-content: center;
-    font-family: "Urbanist", sans-serif;
-    align-items: center;
-    color: #ffe787;
-    margin-bottom: 100px;
-    font-size: 150px;
-    animation-duration: 8s;
-    animation-name: aparecer;
-    animation-iteration-count: initial; }
-
-header .bannerNutricion {
-  display: flex;
-  justify-content: space-around;
-  background-image: url(../img/nutricion-fideos.webp);
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin-bottom: 150px; }
-  header .bannerNutricion .banner__title {
-    display: flex;
-    justify-content: center;
-    font-family: "Urbanist", sans-serif;
-    align-items: center;
+header {
+  z-index: 100000000 !important; }
+  header .menu {
+    background-color: black !important;
     color: white;
-    margin-bottom: 100px;
-    font-size: 150px;
-    animation-duration: 8s;
-    animation-name: aparecer;
-    animation-iteration-count: initial; }
-
-header .bannerContacto {
-  display: flex;
-  justify-content: space-around;
-  background: black;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100vh;
-  margin-bottom: 150px; }
-  header .bannerContacto .banner__title {
     display: flex;
-    justify-content: center;
-    font-family: "Urbanist", sans-serif;
-    align-items: center;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #ffe787;
+    /*colocar borde inferior al menu*/
+    position: fixed; }
+  header .menuLogo {
+    font-size: 35px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white; }
+  header .listas {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /*elimina los puntos o subrayados de los items*/
+    text-decoration: none;
     color: white;
-    margin-bottom: 100px;
-    font-size: 150px;
-    animation-duration: 8s;
-    animation-name: aparecer;
-    animation-iteration-count: initial; }
-
-header .bannerSalud {
-  display: flex;
-  justify-content: space-around;
-  background-image: url(../img/saludfondo.jpg);
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin-bottom: 150px; }
-  header .bannerSalud .banner__title {
+    padding-left: 50%;
+    align-items: center; }
+  header .listasMenuLinks {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    font-size: 20px;
+    margin-top: 5px; }
+  header .listasMenuEntrenar {
+    font-size: 20px; }
+  header .listasMenuEntrenamientos {
+    /*SUBMENU*/
+    position: absolute;
+    list-style: none;
+    background-color: #63624ebb;
+    text-align: left;
+    padding: 10px;
+    display: none; }
+  header .listasMenuEntrenar:hover .listasMenuEntrenamientos {
+    /*se utiliza para que aparezca el menu al colocar el mouse encima*/
+    display: block;
+    color: #ffe787; }
+  header .listasMenuLinks:hover {
+    color: #ffe787; }
+  header .banner__entrenamiento {
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../img/entrenamiento-pesas.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 150px; }
+    header .banner__entrenamiento .banner__title {
+      display: flex;
+      justify-content: center;
+      font-family: "Urbanist", sans-serif;
+      align-items: center;
+      color: #ffe787;
+      margin-bottom: 100px;
+      font-size: 150px;
+      animation-duration: 8s;
+      animation-name: aparecer;
+      animation-iteration-count: initial; }
+  header .bannerNutricion {
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../img/nutricion-fideos.webp);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 150px; }
+    header .bannerNutricion .banner__title {
+      display: flex;
+      justify-content: center;
+      font-family: "Urbanist", sans-serif;
+      align-items: center;
+      color: white;
+      margin-bottom: 100px;
+      font-size: 150px;
+      animation-duration: 8s;
+      animation-name: aparecer;
+      animation-iteration-count: initial; }
+  header .bannerContacto {
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 150px; }
+    header .bannerContacto .banner__title {
+      display: flex;
+      justify-content: center;
+      font-family: "Urbanist", sans-serif;
+      align-items: center;
+      color: white;
+      margin-bottom: 100px;
+      font-size: 150px;
+      animation-duration: 8s;
+      animation-name: aparecer;
+      animation-iteration-count: initial; }
+  header .bannerSalud {
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../img/saludfondo.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 150px; }
+    header .bannerSalud .banner__title {
+      display: flex;
+      justify-content: center;
+      font-family: "Urbanist", sans-serif;
+      align-items: center;
+      color: #ffe787;
+      margin-bottom: 100px;
+      font-size: 100px;
+      animation-duration: 8s;
+      animation-name: aparecer;
+      animation-iteration-count: initial;
+      padding: 100px; }
+  header .rutinasTitle {
     display: flex;
     justify-content: center;
-    font-family: "Urbanist", sans-serif;
     align-items: center;
-    color: #ffe787;
-    margin-bottom: 100px;
-    font-size: 100px;
-    animation-duration: 8s;
-    animation-name: aparecer;
-    animation-iteration-count: initial;
-    padding: 100px; }
-
-header .rutinasTitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  font-size: 70px;
-  font-family: 'Urbanist', sans-serif; }
+    height: 30vh;
+    font-size: 70px;
+    font-family: 'Urbanist', sans-serif; }
 
 body header .banner {
   background-image: url(../img/hombre-fitness.jpg);
@@ -592,6 +582,12 @@ body main .fobia .fobiaAlimenticia {
   margin: 0 auto;
   display: flex;
   height: 100vh; }
+  body main .fobia .fobiaAlimenticia .FobiaAlimenticiaTitle {
+    font-size: 70px;
+    margin: 0 auto;
+    padding: 45px;
+    margin-left: 800px;
+    margin-top: 200px; }
 
 body .rutinas .rutinasTablas {
   display: flex;
@@ -694,10 +690,21 @@ body main .salud {
     body main .salud .saludBeneficios .imgSalud {
       width: 200px;
       border-radius: 5%; }
+    body main .salud .saludBeneficios .saludBeneficiosInfo {
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      margin: 30px; }
   body main .salud .saludEjercicio:hover, body main .salud .saludBeneficios:hover {
     transform: scale(1.1, 1.1);
     /*expandir elemento*/
     transition: all 1.5s ease; }
+
+body main .salud__inspiracion {
+  font-size: 100px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center; }
 
 body .contact {
   display: flex;
