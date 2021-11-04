@@ -260,7 +260,7 @@ body main .index__down--info p {
   font-size: 50px;
   color: #ffe787; }
 
-body main .title, body main .nutricion .nutricionMantenimiento .title, body main .nutricion .nutricionDeficit .title, body main .salud .saludBeneficios .title {
+body main .title, body main .nutricion__contenido .nutricionMantenimiento .title, body main .nutricion__contenido .nutricionDeficit .title, body main .salud .saludBeneficios .title {
   text-decoration: none;
   color: black;
   display: flex;
@@ -308,20 +308,23 @@ body .footer {
 
 @media only screen and (max-width: 415px) {
   body header .menu {
+    /*SECCION MENU*/
     width: 420px; }
   body header .banner {
     width: 420px; }
   body header .banner__info {
     margin-top: 100px; }
     body header .banner__info .banner__info--title {
-      font-size: 100px;
-      display: flex; }
+      font-size: 100px; }
     body header .banner__info .banner__info--contenido .banner__info--text {
       font-size: 30px;
       width: 500px; }
     body header .banner__info .banner__info--contenido .banner__scroll--img {
       width: 40px; }
+  body header .banner__entrenamiento .banner__title, body header .bannerNutricion .banner__title, body header .bannerSalud .banner__title {
+    font-size: 50px; }
   body main .train {
+    /*SECCION INDEX*/
     margin: 0 auto;
     width: 300px; }
     body main .train .train__dieta, body main .train .train__entrenar, body main .train .train__salud {
@@ -343,51 +346,55 @@ body .footer {
       font-size: 2rem;
       display: flex;
       justify-content: center; }
-  body main .entrenamientosTitle {
-    display: flex;
-    text-align: center;
-    font-size: 40px; }
-  body main .bannerEntrenamiento {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin-bottom: 150px; }
   body main .entrenamientos {
-    max-width: 420px;
+    /*SECCION ENTRENAMIENTOS*/
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  body main .entrenamientosFuerza, body main .entrenamientosHipertrofia, body main .entrenamientosResistencia {
+    width: 300px; }
+    body main .entrenamientos .entrenamientos__card .entrenamientos__card--info {
+      display: flex;
+      flex-direction: column; }
+  body main .title__inspiracion {
+    font-size: 10px; }
+  body .nutricion .nutricion__contenido {
+    /*SECCION NUTRICION*/
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 400px;
-    margin-bottom: 20px; }
-  body main .entrenamientosResistencia {
+    width: 300px; }
+    body .nutricion .nutricion__contenido .nutricionSuperavit .nutricionCard {
+      display: flex;
+      flex-direction: column; }
+      body .nutricion .nutricion__contenido .nutricionSuperavit .nutricionCard .imgNutricion {
+        height: 250px;
+        margin-bottom: 25px; }
+    body .nutricion .nutricion__contenido .nutricionMantenimiento .nutricionCard {
+      display: flex;
+      flex-direction: column; }
+      body .nutricion .nutricion__contenido .nutricionMantenimiento .nutricionCard .imgNutricion {
+        height: 250px;
+        margin-bottom: 25px; }
+    body .nutricion .nutricion__contenido .nutricionDeficit .nutricionCard {
+      display: flex;
+      flex-direction: column; }
+      body .nutricion .nutricion__contenido .nutricionDeficit .nutricionCard .imgNutricion {
+        height: 250px;
+        margin-bottom: 25px; }
+  body .nutricionFrase .nutricionFraseContenido {
+    width: 100%; }
+    body .nutricionFrase .nutricionFraseContenido .nutricionFraseInfo .nutricionFraseTitle {
+      margin: 0 auto;
+      display: flex;
+      margin-left: 0;
+      padding: 0;
+      font-size: 4rem; }
+  body main .salud .saludEjercicio {
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 400px;
-    margin-left: 20px;
-    margin-bottom: 20px; }
-  body main .entrenamientosContenido {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    margin: 30px;
-    font-size: 15px; }
-  body main .titleInspiracion {
-    font-size: 2rem; }
+    width: 300px;
+    /*SECCION SALUD*/ }
+    body main .salud .saludEjercicio .saludCard {
+      display: flex;
+      flex-direction: column; }
+      body main .salud .saludEjercicio .saludCard .imgSalud {
+        height: 250px;
+        margin-bottom: 25px; }
   body .footer {
     width: 415px;
     height: 100px;
@@ -486,15 +493,15 @@ body main .entrenamientos__card:hover {
   transition: all 1.5s ease;
   /*velocidad a la que cambia el elemento*/ }
 
-body main .nutricion {
+body main .nutricion__contenido {
   display: grid;
   grid-template-rows: 3 fr 3 fr 1 fr;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "nutricionSuperavit nutricionSuperavit nutricionSuperavit" "nutricionMantenimiento nutricionMantenimiento nutricionMantenimiento" "nutricionDeficit nutricionDeficit nutricionDeficit"; }
-  body main .nutricion .nutricionSuperavit {
+  body main .nutricion__contenido .nutricionSuperavit {
     grid-area: nutricionSuperavit;
     text-decoration: none; }
-    body main .nutricion .nutricionSuperavit .nutricionSuperavitCard {
+    body main .nutricion__contenido .nutricionSuperavit .nutricionCard {
       box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
       /*sensacion de profundidad*/
       border-radius: 2%;
@@ -506,10 +513,10 @@ body main .nutricion {
       margin-bottom: 25px;
       max-width: 1024px;
       color: black; }
-    body main .nutricion .nutricionSuperavit .imgNutricion {
+    body main .nutricion__contenido .nutricionSuperavit .imgNutricion {
       width: 200px;
       border-radius: 5%; }
-    body main .nutricion .nutricionSuperavit .title {
+    body main .nutricion__contenido .nutricionSuperavit .title {
       text-decoration: none;
       color: black;
       display: flex;
@@ -517,15 +524,15 @@ body main .nutricion {
       font-family: "Urbanist", sans-serif;
       margin-left: 10px;
       margin-bottom: 15px; }
-    body main .nutricion .nutricionSuperavit .nutricionSuperavitInfo {
+    body main .nutricion__contenido .nutricionSuperavit .nutricionSuperavitInfo {
       display: flex;
       flex-direction: column;
       padding: 30px;
       margin: 30px; }
-  body main .nutricion .nutricionMantenimiento {
+  body main .nutricion__contenido .nutricionMantenimiento {
     grid-area: nutricionMantenimiento;
     text-decoration: none; }
-    body main .nutricion .nutricionMantenimiento .nutricionSuperavitCard {
+    body main .nutricion__contenido .nutricionMantenimiento .nutricionCard {
       box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
       /*sensacion de profundidad*/
       border-radius: 2%;
@@ -537,19 +544,19 @@ body main .nutricion {
       margin-bottom: 25px;
       max-width: 1024px;
       color: black; }
-    body main .nutricion .nutricionMantenimiento .nutricionMantenimientoInfo {
+    body main .nutricion__contenido .nutricionMantenimiento .nutricionMantenimientoInfo {
       display: flex;
       flex-direction: column;
       padding: 30px;
       margin: 30px; }
-    body main .nutricion .nutricionMantenimiento .imgNutricion {
+    body main .nutricion__contenido .nutricionMantenimiento .imgNutricion {
       width: 200px;
       border-radius: 5%; }
-  body main .nutricion .nutricionDeficit {
+  body main .nutricion__contenido .nutricionDeficit {
     grid-area: nutricionDeficit;
     text-decoration: none;
     margin-bottom: 150px; }
-    body main .nutricion .nutricionDeficit .nutricionSuperavitCard {
+    body main .nutricion__contenido .nutricionDeficit .nutricionCard {
       box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
       /*sensacion de profundidad*/
       border-radius: 2%;
@@ -561,31 +568,27 @@ body main .nutricion {
       margin-bottom: 25px;
       max-width: 1024px;
       color: black; }
-    body main .nutricion .nutricionDeficit .nutricionDeficitInfo {
+    body main .nutricion__contenido .nutricionDeficit .nutricionDeficitInfo {
       display: flex;
       flex-direction: column;
       padding: 30px;
       margin: 30px; }
-    body main .nutricion .nutricionDeficit .imgNutricion {
+    body main .nutricion__contenido .nutricionDeficit .imgNutricion {
       width: 200px;
       border-radius: 5%; }
-  body main .nutricion .nutricionDeficit:hover {
-    transform: scale(1.1, 1.1);
-    /*expandir elemento*/
-    transition: all 1.5s ease; }
-  body main .nutricion .nutricionSuperavitCard:hover {
+  body main .nutricion__contenido .nutricionCard:hover {
     transform: scale(1.1, 1.1);
     /*expandir elemento*/
     transition: all 1.5s ease; }
 
-body main .fobia .fobiaAlimenticia {
+body main .nutricionFrase .nutricionFraseContenido {
   background-image: url(../img/fobia-alimenticia.jpg);
   background-position: left;
   background-size: cover;
   margin: 0 auto;
   display: flex;
   height: 100vh; }
-  body main .fobia .fobiaAlimenticia .FobiaAlimenticiaTitle {
+  body main .nutricionFrase .nutricionFraseContenido .nutricionFraseTitle {
     font-size: 70px;
     margin: 0 auto;
     padding: 45px;

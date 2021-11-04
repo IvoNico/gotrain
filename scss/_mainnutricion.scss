@@ -1,7 +1,7 @@
 @mixin cards ($area){
     grid-area: $area;
     text-decoration: none;
-    .nutricionSuperavitCard{
+    .nutricionCard{
         box-shadow: $box-shadowsombra;       /*sensacion de profundidad*/
         border-radius: 2%;
         margin: 0 auto;
@@ -22,7 +22,7 @@
 }
 body{
     main{
-        .nutricion{
+        .nutricion__contenido{
             display: grid;
             grid-template-rows: 3 fr 3 fr 1 fr;
             grid-template-columns: repeat(3, 1fr);
@@ -79,24 +79,20 @@ body{
                     border-radius: 5%;
                 }
             }
-            .nutricionDeficit:hover{
-                transform: scale(1.1, 1.1);          /*expandir elemento*/
-                transition: all 1.5s ease;
-            }
-            .nutricionSuperavitCard:hover{
+            .nutricionCard:hover{
                 transform: scale(1.1, 1.1);          /*expandir elemento*/
                 transition: all 1.5s ease;
             }
         }
-        .fobia{
-            .fobiaAlimenticia{
+        .nutricionFrase{
+            .nutricionFraseContenido{
                 background-image: url(../img/fobia-alimenticia.jpg);
                 background-position: left;
                 background-size: cover;
                 margin: 0 auto;
                 display: flex;
                 height: 100vh;
-                .FobiaAlimenticiaTitle{
+                .nutricionFraseTitle{
                     font-size:($font-size)-30;
                     margin: 0 auto;
                     padding: 45px;
