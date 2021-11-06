@@ -40,7 +40,7 @@
                     }
                 }
             }
-            .banner__entrenamiento,.bannerNutricion, .bannerSalud{
+            .banner__entrenamiento,.bannerNutricion, .bannerSalud, .bannerContacto{
                 @include title();
             }
         }
@@ -119,23 +119,47 @@
                     .nutricionFraseTitle{
                         margin: 0 auto;
                         display: flex;
-                        margin-left: 0;
+                        margin-left:80px;
                         padding: 0;
-                        font-size: 4rem;
+                        margin-right: 60px;
+                        font-size: 3rem;
                     }
                 }
             }
         }
-        main{
-            .salud{                                                    
+        .salud{
+            .saludContenido{
                 .saludEjercicio{ 
                     @include cards();                                     /*SECCION SALUD*/
                     .saludCard{
                         @include flex();
-                        .imgSalud{
-                            @include image();
-                        }
+                            .imgSalud{
+                                @include image();
+                            }
                     }
+                }
+                .saludBeneficios{
+                    margin-bottom: 5px;
+                    @include cards();                                    /*SECCION SALUD*/
+                    .saludCard{
+                        @include flex();
+                            .imgSalud{
+                                @include image();
+                            }
+                    }
+                }
+            }
+            .saludInspiracion{
+                .saludInspiracionContendio{
+                    font-size: 2rem;
+                }
+            }                                                   
+        }
+        .contact{
+            .form{                                                      /*SECCION CONTANTO*/
+                width: 90%;
+                .label__consulta{
+                    height: 15vh;
                 }
             }
         }

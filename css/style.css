@@ -260,7 +260,7 @@ body main .index__down--info p {
   font-size: 50px;
   color: #ffe787; }
 
-body main .title, body main .nutricion__contenido .nutricionMantenimiento .title, body main .nutricion__contenido .nutricionDeficit .title, body main .salud .saludBeneficios .title {
+body main .title, body main .nutricion__contenido .nutricionMantenimiento .title, body main .nutricion__contenido .nutricionDeficit .title, body main .saludContenido .saludBeneficios .title {
   text-decoration: none;
   color: black;
   display: flex;
@@ -321,7 +321,7 @@ body .footer {
       width: 500px; }
     body header .banner__info .banner__info--contenido .banner__scroll--img {
       width: 40px; }
-  body header .banner__entrenamiento .banner__title, body header .bannerNutricion .banner__title, body header .bannerSalud .banner__title {
+  body header .banner__entrenamiento .banner__title, body header .bannerNutricion .banner__title, body header .bannerSalud .banner__title, body header .bannerContacto .banner__title {
     font-size: 50px; }
   body main .train {
     /*SECCION INDEX*/
@@ -382,19 +382,38 @@ body .footer {
     body .nutricionFrase .nutricionFraseContenido .nutricionFraseInfo .nutricionFraseTitle {
       margin: 0 auto;
       display: flex;
-      margin-left: 0;
+      margin-left: 80px;
       padding: 0;
-      font-size: 4rem; }
-  body main .salud .saludEjercicio {
+      margin-right: 60px;
+      font-size: 3rem; }
+  body .salud .saludContenido .saludEjercicio {
     margin: 0 auto;
     width: 300px;
     /*SECCION SALUD*/ }
-    body main .salud .saludEjercicio .saludCard {
+    body .salud .saludContenido .saludEjercicio .saludCard {
       display: flex;
       flex-direction: column; }
-      body main .salud .saludEjercicio .saludCard .imgSalud {
+      body .salud .saludContenido .saludEjercicio .saludCard .imgSalud {
         height: 250px;
         margin-bottom: 25px; }
+  body .salud .saludContenido .saludBeneficios {
+    margin-bottom: 5px;
+    margin: 0 auto;
+    width: 300px;
+    /*SECCION SALUD*/ }
+    body .salud .saludContenido .saludBeneficios .saludCard {
+      display: flex;
+      flex-direction: column; }
+      body .salud .saludContenido .saludBeneficios .saludCard .imgSalud {
+        height: 250px;
+        margin-bottom: 25px; }
+  body .salud .saludInspiracion .saludInspiracionContendio {
+    font-size: 2rem; }
+  body .contact .form {
+    /*SECCION CONTANTO*/
+    width: 90%; }
+    body .contact .form .label__consulta {
+      height: 15vh; }
   body .footer {
     width: 415px;
     height: 100px;
@@ -641,16 +660,16 @@ body main .rutinasVideo {
     margin-top: 25px;
     margin-bottom: 80px; }
 
-body main .salud {
+body main .saludContenido {
   display: grid;
   grid-template-rows: 1fr 1fr 0.5fr;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "saludEjercicio saludEjercicio saludEjercicio" "saludBeneficios saludBeneficios saludBeneficios"; }
-  body main .salud .saludEjercicio {
+  body main .saludContenido .saludEjercicio {
     grid-area: saludEjercicio;
     text-decoration: none;
     margin: 0 auto; }
-    body main .salud .saludEjercicio .saludCard {
+    body main .saludContenido .saludEjercicio .saludCard {
       box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
       /*sensacion de profundidad*/
       border-radius: 2%;
@@ -662,10 +681,10 @@ body main .salud {
       margin-bottom: 25px;
       max-width: 1024px;
       color: black; }
-    body main .salud .saludEjercicio .imgSalud {
+    body main .saludContenido .saludEjercicio .imgSalud {
       width: 200px;
       border-radius: 5%; }
-    body main .salud .saludEjercicio .title {
+    body main .saludContenido .saludEjercicio .title {
       text-decoration: none;
       color: black;
       display: flex;
@@ -673,16 +692,16 @@ body main .salud {
       font-family: "Urbanist", sans-serif;
       margin-left: 10px;
       margin-bottom: 15px; }
-    body main .salud .saludEjercicio .saludEjercicioInfo {
+    body main .saludContenido .saludEjercicio .saludEjercicioInfo {
       display: flex;
       flex-direction: column;
       padding: 30px;
       margin: 30px; }
-  body main .salud .saludBeneficios {
+  body main .saludContenido .saludBeneficios {
     grid-area: saludBeneficios;
     text-decoration: none;
     margin: 0 auto; }
-    body main .salud .saludBeneficios .saludCard {
+    body main .saludContenido .saludBeneficios .saludCard {
       box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
       /*sensacion de profundidad*/
       border-radius: 2%;
@@ -694,20 +713,20 @@ body main .salud {
       margin-bottom: 25px;
       max-width: 1024px;
       color: black; }
-    body main .salud .saludBeneficios .imgSalud {
+    body main .saludContenido .saludBeneficios .imgSalud {
       width: 200px;
       border-radius: 5%; }
-    body main .salud .saludBeneficios .saludBeneficiosInfo {
+    body main .saludContenido .saludBeneficios .saludBeneficiosInfo {
       display: flex;
       flex-direction: column;
       padding: 30px;
       margin: 30px; }
-  body main .salud .saludEjercicio:hover, body main .salud .saludBeneficios:hover {
+  body main .saludContenido .saludEjercicio:hover, body main .saludContenido .saludBeneficios:hover {
     transform: scale(1.1, 1.1);
     /*expandir elemento*/
     transition: all 1.5s ease; }
 
-body main .salud__inspiracion {
+body main .saludInspiracionContendio {
   font-size: 100px;
   margin: 0 auto;
   display: flex;

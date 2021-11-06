@@ -24,7 +24,7 @@
 $imagen:200px;
 body{
     main{
-        .salud{
+        .saludContenido{
             display: grid;
             grid-template-rows: 1fr 1fr 0.5fr;
             grid-template-columns: repeat(3, 1fr);
@@ -68,7 +68,7 @@ body{
                 transition: all 1.5s ease;
             }
         }
-        .salud__inspiracion{
+        .saludInspiracionContendio{
             font-size: $font-size;
             margin: 0 auto;
             display: flex;
