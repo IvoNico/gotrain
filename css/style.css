@@ -323,6 +323,10 @@ body .footer {
       width: 40px; }
   body header .banner__entrenamiento .banner__title, body header .bannerNutricion .banner__title, body header .bannerSalud .banner__title, body header .bannerContacto .banner__title {
     font-size: 50px; }
+  body header .rutinasTitle {
+    font-size: 50px;
+    display: flex;
+    align-items: flex-end; }
   body main .train {
     /*SECCION INDEX*/
     margin: 0 auto;
@@ -409,11 +413,20 @@ body .footer {
         margin-bottom: 25px; }
   body .salud .saludInspiracion .saludInspiracionContendio {
     font-size: 2rem; }
-  body .contact .form {
+  body .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp {
+    display: flex;
+    flex-direction: column;
+    width: 300px; }
+    body .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp .rutinasTablasContenido {
+      width: 300px; }
+  body .form {
     /*SECCION CONTANTO*/
     width: 90%; }
-    body .contact .form .label__consulta {
+    body .form .label__consulta {
       height: 15vh; }
+  body main .rutinas .rutinasTablas {
+    display: flex;
+    flex-direction: column; }
   body .footer {
     width: 415px;
     height: 100px;
@@ -423,32 +436,13 @@ body .footer {
     body .footer .footerRedes {
       margin-left: 100px; } }
 
+@media screen and (max-width: 800px) {
+  header .menu {
+    max-width: 800px; }
+  header .banner__entrenamiento .banner__title, header .bannerNutricion .banner__title, header .bannerSalud .banner__title, header .bannerContacto .banner__title {
+    font-size: 80px; } }
+
 @media screen and (max-width: 1024px) {
-  body header .listas {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    /*elimina los puntos o subrayados de los items*/
-    text-decoration: none;
-    color: white;
-    align-items: center;
-    text-align: center;
-    margin-right: 200px; }
-  body main .trainDieta, body main .trainEntrenar, body main .trainSalud {
-    box-shadow: 5px 5px 20px 5px rgba(69, 67, 96, 0.1);
-    /*sensacion de profundidad*/
-    border-radius: 2%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 700px;
-    margin-bottom: 20px; }
-  body main .trainDietaInfo, body main .trainEntrenarInfo, body main .trainSaludInfo {
-    margin-top: 15px;
-    font-size: 20px; }
   body .footer {
     height: 100px;
     align-items: center; }

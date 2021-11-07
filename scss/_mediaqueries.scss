@@ -43,6 +43,12 @@
             .banner__entrenamiento,.bannerNutricion, .bannerSalud, .bannerContacto{
                 @include title();
             }
+            .rutinasTitle{
+                font-size: 50px;
+                display: flex;
+                align-items: flex-end;
+            }
+            
         }
         main{ 
             .train{                                         /*SECCION INDEX*/
@@ -155,12 +161,26 @@
                 }
             }                                                   
         }
-        .contact{
+        .rutinas{
+            section.wow.rutinasTablas.animate__.animate__zoomInUp{
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                .rutinasTablasContenido{
+                    width: 300px;
+                }
+            }
+        }
             .form{                                                      /*SECCION CONTANTO*/
                 width: 90%;
                 .label__consulta{
                     height: 15vh;
                 }
+            }
+        main .rutinas{
+            .rutinasTablas{
+                display: flex;
+                flex-direction: column;
             }
         }
         .footer{
@@ -176,38 +196,21 @@
         }
     }
 }
+@media screen and (max-width: 800px){
+    header{
+        .menu{
+            max-width: 800px;
+        }
+        .banner__entrenamiento, .bannerNutricion, .bannerSalud, .bannerContacto{
+            .banner__title{
+                font-size: ($font-size)-20;
+            }
+        }
+    }
+}
 @media screen and (max-width: 1024px){
     body{
         header{
-            .listas{
-                margin: 0 auto;
-                display: flex;
-                flex-direction: row;
-                list-style: none;                      /*elimina los puntos o subrayados de los items*/
-                text-decoration: none;
-                color: white;
-                align-items: center;
-                text-align: center;
-                margin-right: 200px;
-            }
-        }
-        main{
-            .trainDieta, .trainEntrenar, .trainSalud{
-                box-shadow:  5px 5px 20px 5px rgba(69,67,96,0.1);       /*sensacion de profundidad*/
-                border-radius: 2%;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                width: 700px;
-                margin-bottom: 20px;
-            }
-            .trainDietaInfo, .trainEntrenarInfo, .trainSaludInfo{
-                margin-top: 15px;
-                font-size: ($font-size/5);
-            }
-            
             
         }
         .footer{
