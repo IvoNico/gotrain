@@ -7,6 +7,7 @@ body{
         .form{
             margin: 0 auto;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             border: solid black;
             height: 119vh;
@@ -16,8 +17,9 @@ body{
             box-shadow:  5px 5px 20px 5px rgba(69, 67, 96, 0.308);
             margin-bottom: 40px;
             border-radius: 5%;
-            .input__email{
-                margin-left: 26px;
+            .input{
+                display: flex;
+                flex-direction: column;
             }
         }
     }

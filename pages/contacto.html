@@ -58,29 +58,22 @@
                         <fieldset>
                             <legend>Formulario de contacto</legend>
                             <label for="name">Nombre</label>
-                            <input type="text" name="name" placeholder="Nombre" required>
-                            <br><br>
+                            <input class="input" type="text" name="name" placeholder="Nombre" required>
                             <label for="apellido">Apellido</label>
-                            <input type="text" name="apellido" placeholder="Apellido" required>
-                            <br><br>
+                            <input class="input" type="text" name="apellido" placeholder="Apellido" required>
                             <label for="email">Email</label>
-                            <input class="input__email" type="email" id="email" name="email" placeholder="Email" required>
-                            <br><br>
+                            <input class="input" class="input__email" type="email" id="email" name="email" placeholder="Email" required>
                             <label for="nacionalidad">Selecciona tu nacionalidad</label>
                             <input type="radio" id="argentina" itemid="nacionalidad" value="argentina">Argentina
                             <input type="radio" id="españa" itemid="nacionalidad" value="españa">España
                             <input type="radio" id="brasil" itemid="nacionalidad" value="brasil">Brasil
-                            <input type="radio" id="otro" itemid="nacionalidad" value="otro">Otro
-                            <br><br>
+                            <input class="input" type="radio" id="otro" itemid="nacionalidad" value="otro">Otro
                             <label  for="consulta">Tema de tu consulta</label>
                             <input type="checkbox" id="tema1" name="tema1" value="entrenamiento">Entrenamiento
                             <input type="checkbox" id="tema2" name="tema2" value="nutricion">Nutrición
-                            <input type="checkbox" id="tema3" name="tema3" value="salud">Salud
-                            <br><br>
-                            <label  for="consulta">Escribe tu consulta</label>
-                            <br><br>
+                            <input class="input" type="checkbox" id="tema3" name="tema3" value="salud">Salud
+                            <label class="input" for="consulta">Escribe tu consulta</label>
                             <textarea class="label__consulta" name="consulta" id="consulta" cols="30" rows="10" minlength="1" maxlength="300" required></textarea>
-                            <br><br>
                             <input type="submit" value="Submit">
                         </fieldset>
                     </form>
