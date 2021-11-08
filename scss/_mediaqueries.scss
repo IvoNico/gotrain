@@ -21,6 +21,17 @@
         header{                                        
             .menu{                                               /*SECCION MENU*/
                 width: 420px;
+                .container-fluid{
+                    .collapse{
+                        .navbar-nav{
+                            .nav-item{
+                                .listasMenuLinks{
+                                    color: rgb(192, 179, 0);
+                                }
+                            }
+                        }
+                    }
+                }
             }
             .banner{
                 width: 420px;
@@ -48,7 +59,9 @@
                 display: flex;
                 align-items: flex-end;
             }
-            
+            .error{
+                font-size: 50px;
+            }
         }
         main{ 
             .train{                                         /*SECCION INDEX*/
@@ -146,7 +159,7 @@
                 }
                 .saludBeneficios{
                     margin-bottom: 5px;
-                    @include cards();                                    /*SECCION SALUD*/
+                    @include cards();                                    
                     .saludCard{
                         @include flex();
                             .imgSalud{
@@ -161,25 +174,38 @@
                 }
             }                                                   
         }
-        .rutinas{
+        .rutinas{                                                       /*SECCION RUTINAS*/
             section.wow.rutinasTablas.animate__.animate__zoomInUp{
                 display: flex;
                 flex-direction: column;
                 width: 300px;
                 div{
                     .rutinasTablasProgramas{
-                        font-size: 7px;
+                        font-size: 6px;
+                        align-items: center;
                     }
                 }
             }
+            .rutinasVideo{
+                @include cards();
+                .rutinasVideoContenido{
+                    width: 250px;
+                }
+            }
         }
-            .form{                                                      /*SECCION CONTANTO*/
+            .form{                                                      /*SECCION CONTACTO*/
                 width: 90%;
                 .label__consulta{
                     height: 15vh;
                 }
             }
-        .footer{
+            .error404{                                                  /*SECCION ERROR404*/
+                font-size: 20px;
+            }
+            .error404__info{
+                @include cards();
+            }
+        .footer{                                                        /*FOOTER*/
             width: 415px;
             height: 100px;
             align-items: center;
@@ -194,8 +220,19 @@
 }
 @media screen and (max-width: 800px){
     header{
-        .menu{
-            max-width: 800px;
+        .menu{                                               /*SECCION MENU*/
+            width: 800px;
+            .container-fluid{
+                .collapse{
+                    .navbar-nav{
+                        .nav-item{
+                            .listasMenuLinks{
+                                color: rgb(192, 179, 0);
+                            }
+                        }
+                    }
+                }
+            }
         }
         .banner__entrenamiento, .bannerNutricion, .bannerSalud, .bannerContacto{
             .banner__title{
@@ -203,11 +240,106 @@
             }
         }
     }
+    main{
+        .train{                                              /*SECCION INDEX*/
+            .train__dieta, .train__entrenar, .train__salud{
+                height: 30vh;
+                .imagen__index{
+                    height: 25vh;
+                }
+            }
+        }
+        .nutricionFrase{                                    /*SECCION NUTRICIÓN*/
+            .nutricionFraseContenido{
+                width: 100%;
+                .nutricionFraseInfo{
+                    .nutricionFraseTitle{
+                        margin: 0 auto;
+                        display: flex;
+                        margin-left:80px;
+                        padding: 0;
+                        margin-right: 60px;
+                        font-size: 5rem;
+                    }
+                }
+            }
+        }
+    }
+    .rutinas{                                                       /*SECCION RUTINAS*/
+        section.wow.rutinasTablas.animate__.animate__zoomInUp{
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            div{
+                .rutinasTablasProgramas{
+                    font-size: 15px;
+                    align-items: center;
+                }
+            }
+        }
+        .rutinasVideo{
+            
+            .rutinasVideoContenido{
+                width: 550px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 1024px){
     body{
         header{
-            
+            .menu{
+                width: 1024px;
+            }
+            .banner__entrenamiento, .bannerNutricion, .bannerSalud, .bannerContacto{
+                .banner__title{
+                    font-size: ($font-size);
+                }
+            }
+        }
+        main{
+            .train{                                              /*SECCION INDEX*/
+                .train__dieta, .train__entrenar, .train__salud{
+                    height: 30vh;
+                    .imagen__index{
+                        height: 20vh;
+                    }
+                }
+            }
+            .nutricionFrase{                                    /*SECCION NUTRICIÓN*/
+                .nutricionFraseContenido{
+                    width: 100%;
+                    .nutricionFraseInfo{
+                        .nutricionFraseTitle{
+                            margin: 0 auto;
+                            display: flex;
+                            margin-left:80px;
+                            padding: 0;
+                            margin-right: 60px;
+                            font-size: 8rem;
+                        }
+                    }
+                }
+            }
+            .rutinas{                                                       /*SECCION RUTINAS*/
+                section.wow.rutinasTablas.animate__.animate__zoomInUp{
+                    display: flex;
+                    flex-direction: column;
+                    width: 300px;
+                    div{
+                        .rutinasTablasProgramas{
+                            font-size: 6px;
+                            align-items: center;
+                        }
+                    }
+                }
+                .rutinasVideo{
+                    @include cards();
+                    .rutinasVideoContenido{
+                        width: 250px;
+                    }
+                }
+            }
         }
         .footer{
             height: 100px;

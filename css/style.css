@@ -310,6 +310,8 @@ body .footer {
   body header .menu {
     /*SECCION MENU*/
     width: 420px; }
+    body header .menu .container-fluid .collapse .navbar-nav .nav-item .listasMenuLinks {
+      color: #c0b300; }
   body header .banner {
     width: 420px; }
   body header .banner__info {
@@ -327,6 +329,8 @@ body .footer {
     font-size: 50px;
     display: flex;
     align-items: flex-end; }
+  body header .error {
+    font-size: 50px; }
   body main .train {
     /*SECCION INDEX*/
     margin: 0 auto;
@@ -403,8 +407,7 @@ body .footer {
   body .salud .saludContenido .saludBeneficios {
     margin-bottom: 5px;
     margin: 0 auto;
-    width: 300px;
-    /*SECCION SALUD*/ }
+    width: 300px; }
     body .salud .saludContenido .saludBeneficios .saludCard {
       display: flex;
       flex-direction: column; }
@@ -413,18 +416,33 @@ body .footer {
         margin-bottom: 25px; }
   body .salud .saludInspiracion .saludInspiracionContendio {
     font-size: 2rem; }
-  body .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp {
-    display: flex;
-    flex-direction: column;
-    width: 300px; }
-    body .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp div .rutinasTablasProgramas {
-      font-size: 7px; }
+  body .rutinas {
+    /*SECCION RUTINAS*/ }
+    body .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp {
+      display: flex;
+      flex-direction: column;
+      width: 300px; }
+      body .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp div .rutinasTablasProgramas {
+        font-size: 6px;
+        align-items: center; }
+    body .rutinas .rutinasVideo {
+      margin: 0 auto;
+      width: 300px; }
+      body .rutinas .rutinasVideo .rutinasVideoContenido {
+        width: 250px; }
   body .form {
-    /*SECCION CONTANTO*/
+    /*SECCION CONTACTO*/
     width: 90%; }
     body .form .label__consulta {
       height: 15vh; }
+  body .error404 {
+    /*SECCION ERROR404*/
+    font-size: 20px; }
+  body .error404__info {
+    margin: 0 auto;
+    width: 300px; }
   body .footer {
+    /*FOOTER*/
     width: 415px;
     height: 100px;
     align-items: center; }
@@ -435,11 +453,77 @@ body .footer {
 
 @media screen and (max-width: 800px) {
   header .menu {
-    max-width: 800px; }
+    /*SECCION MENU*/
+    width: 800px; }
+    header .menu .container-fluid .collapse .navbar-nav .nav-item .listasMenuLinks {
+      color: #c0b300; }
   header .banner__entrenamiento .banner__title, header .bannerNutricion .banner__title, header .bannerSalud .banner__title, header .bannerContacto .banner__title {
-    font-size: 80px; } }
+    font-size: 80px; }
+  main .train {
+    /*SECCION INDEX*/ }
+    main .train .train__dieta, main .train .train__entrenar, main .train .train__salud {
+      height: 30vh; }
+      main .train .train__dieta .imagen__index, main .train .train__entrenar .imagen__index, main .train .train__salud .imagen__index {
+        height: 25vh; }
+  main .nutricionFrase {
+    /*SECCION NUTRICIÓN*/ }
+    main .nutricionFrase .nutricionFraseContenido {
+      width: 100%; }
+      main .nutricionFrase .nutricionFraseContenido .nutricionFraseInfo .nutricionFraseTitle {
+        margin: 0 auto;
+        display: flex;
+        margin-left: 80px;
+        padding: 0;
+        margin-right: 60px;
+        font-size: 5rem; }
+  .rutinas {
+    /*SECCION RUTINAS*/ }
+    .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp {
+      display: flex;
+      flex-direction: column;
+      width: 600px; }
+      .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp div .rutinasTablasProgramas {
+        font-size: 15px;
+        align-items: center; }
+    .rutinas .rutinasVideo .rutinasVideoContenido {
+      width: 550px; } }
 
 @media screen and (max-width: 1024px) {
+  body header .menu {
+    width: 1024px; }
+  body header .banner__entrenamiento .banner__title, body header .bannerNutricion .banner__title, body header .bannerSalud .banner__title, body header .bannerContacto .banner__title {
+    font-size: 100px; }
+  body main .train {
+    /*SECCION INDEX*/ }
+    body main .train .train__dieta, body main .train .train__entrenar, body main .train .train__salud {
+      height: 30vh; }
+      body main .train .train__dieta .imagen__index, body main .train .train__entrenar .imagen__index, body main .train .train__salud .imagen__index {
+        height: 20vh; }
+  body main .nutricionFrase {
+    /*SECCION NUTRICIÓN*/ }
+    body main .nutricionFrase .nutricionFraseContenido {
+      width: 100%; }
+      body main .nutricionFrase .nutricionFraseContenido .nutricionFraseInfo .nutricionFraseTitle {
+        margin: 0 auto;
+        display: flex;
+        margin-left: 80px;
+        padding: 0;
+        margin-right: 60px;
+        font-size: 8rem; }
+  body main .rutinas {
+    /*SECCION RUTINAS*/ }
+    body main .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp {
+      display: flex;
+      flex-direction: column;
+      width: 300px; }
+      body main .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp div .rutinasTablasProgramas {
+        font-size: 6px;
+        align-items: center; }
+    body main .rutinas .rutinasVideo {
+      margin: 0 auto;
+      width: 300px; }
+      body main .rutinas .rutinasVideo .rutinasVideoContenido {
+        width: 250px; }
   body .footer {
     height: 100px;
     align-items: center; }
