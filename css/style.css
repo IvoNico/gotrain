@@ -417,16 +417,13 @@ body .footer {
     display: flex;
     flex-direction: column;
     width: 300px; }
-    body .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp .rutinasTablasContenido {
-      width: 300px; }
+    body .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp div .rutinasTablasProgramas {
+      font-size: 7px; }
   body .form {
     /*SECCION CONTANTO*/
     width: 90%; }
     body .form .label__consulta {
       height: 15vh; }
-  body main .rutinas .rutinasTablas {
-    display: flex;
-    flex-direction: column; }
   body .footer {
     width: 415px;
     height: 100px;

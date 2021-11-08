@@ -166,8 +166,10 @@
                 display: flex;
                 flex-direction: column;
                 width: 300px;
-                .rutinasTablasContenido{
-                    width: 300px;
+                div{
+                    .rutinasTablasProgramas{
+                        font-size: 7px;
+                    }
                 }
             }
         }
@@ -177,12 +179,6 @@
                     height: 15vh;
                 }
             }
-        main .rutinas{
-            .rutinasTablas{
-                display: flex;
-                flex-direction: column;
-            }
-        }
         .footer{
             width: 415px;
             height: 100px;
