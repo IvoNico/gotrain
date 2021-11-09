@@ -309,7 +309,7 @@ body .footer {
 @media only screen and (max-width: 415px) {
   body header .menu {
     /*SECCION MENU*/
-    width: 420px; }
+    width: 410px; }
     body header .menu .container-fluid .collapse .navbar-nav .nav-item .listasMenuLinks {
       color: #c0b300; }
   body header .banner {
@@ -453,18 +453,15 @@ body .footer {
 
 @media screen and (max-width: 800px) {
   header .menu {
-    /*SECCION MENU*/
-    width: 800px; }
+    /*SECCION MENU*/ }
     header .menu .container-fluid .collapse .navbar-nav .nav-item .listasMenuLinks {
-      color: #c0b300; }
+      color: #c0b300 !important; }
   header .banner__entrenamiento .banner__title, header .bannerNutricion .banner__title, header .bannerSalud .banner__title, header .bannerContacto .banner__title {
     font-size: 80px; }
   main .train {
     /*SECCION INDEX*/ }
-    main .train .train__dieta, main .train .train__entrenar, main .train .train__salud {
-      height: 30vh; }
-      main .train .train__dieta .imagen__index, main .train .train__entrenar .imagen__index, main .train .train__salud .imagen__index {
-        height: 25vh; }
+    main .train .train__dieta .imagen__index, main .train .train__entrenar .imagen__index, main .train .train__salud .imagen__index {
+      height: 25vh; }
   main .nutricionFrase {
     /*SECCION NUTRICIÓN*/ }
     main .nutricionFrase .nutricionFraseContenido {
@@ -489,16 +486,12 @@ body .footer {
       width: 550px; } }
 
 @media screen and (max-width: 1024px) {
-  body header .menu {
-    width: 1024px; }
   body header .banner__entrenamiento .banner__title, body header .bannerNutricion .banner__title, body header .bannerSalud .banner__title, body header .bannerContacto .banner__title {
     font-size: 100px; }
   body main .train {
     /*SECCION INDEX*/ }
-    body main .train .train__dieta, body main .train .train__entrenar, body main .train .train__salud {
-      height: 30vh; }
-      body main .train .train__dieta .imagen__index, body main .train .train__entrenar .imagen__index, body main .train .train__salud .imagen__index {
-        height: 20vh; }
+    body main .train .train__dieta .imagen__index, body main .train .train__entrenar .imagen__index, body main .train .train__salud .imagen__index {
+      height: 20vh; }
   body main .nutricionFrase {
     /*SECCION NUTRICIÓN*/ }
     body main .nutricionFrase .nutricionFraseContenido {

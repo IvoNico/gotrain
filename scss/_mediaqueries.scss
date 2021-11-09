@@ -20,7 +20,7 @@
     body{
         header{                                        
             .menu{                                               /*SECCION MENU*/
-                width: 420px;
+                width: 410px;
                 .container-fluid{
                     .collapse{
                         .navbar-nav{
@@ -221,13 +221,12 @@
 @media screen and (max-width: 800px){
     header{
         .menu{                                               /*SECCION MENU*/
-            width: 800px;
             .container-fluid{
                 .collapse{
                     .navbar-nav{
                         .nav-item{
                             .listasMenuLinks{
-                                color: rgb(192, 179, 0);
+                                color: rgb(192, 179, 0) !important;
                             }
                         }
                     }
@@ -243,7 +242,6 @@
     main{
         .train{                                              /*SECCION INDEX*/
             .train__dieta, .train__entrenar, .train__salud{
-                height: 30vh;
                 .imagen__index{
                     height: 25vh;
                 }
@@ -288,9 +286,6 @@
 @media screen and (max-width: 1024px){
     body{
         header{
-            .menu{
-                width: 1024px;
-            }
             .banner__entrenamiento, .bannerNutricion, .bannerSalud, .bannerContacto{
                 .banner__title{
                     font-size: ($font-size);
@@ -300,7 +295,6 @@
         main{
             .train{                                              /*SECCION INDEX*/
                 .train__dieta, .train__entrenar, .train__salud{
-                    height: 30vh;
                     .imagen__index{
                         height: 20vh;
                     }
