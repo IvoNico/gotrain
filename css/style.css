@@ -308,8 +308,7 @@ body .footer {
 
 @media only screen and (max-width: 415px) {
   body header .menu {
-    /*SECCION MENU*/
-    width: 410px; }
+    /*SECCION MENU*/ }
     body header .menu .container-fluid .collapse .navbar-nav .nav-item .listasMenuLinks {
       color: #c0b300; }
   body header .banner {
