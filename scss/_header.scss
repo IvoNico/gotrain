@@ -82,13 +82,13 @@ header{
             @include bannersTitle(($font-size)+50,$cool-yelow);
         }
     }
-    .bannerNutricion{
+    .banner__nutricion{
         @include banners(url(../img/nutricion-fideos.webp));
             .banner__title{
                 @include bannersTitle(($font-size)+50, white);
             }
     }
-    .bannerContacto{
+    .banner__contacto{
         display: flex;
         justify-content:space-around;
         background: black;

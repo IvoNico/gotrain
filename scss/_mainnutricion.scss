@@ -1,7 +1,7 @@
 @mixin cards ($area){
     grid-area: $area;
     text-decoration: none;
-    .nutricionCard{
+    .nutricion__card{
         box-shadow: $box-shadowsombra;       /*sensacion de profundidad*/
         border-radius: 2%;
         margin: 0 auto;
@@ -30,9 +30,9 @@ body{
             "nutricionSuperavit nutricionSuperavit nutricionSuperavit"
             "nutricionMantenimiento nutricionMantenimiento nutricionMantenimiento"
             "nutricionDeficit nutricionDeficit nutricionDeficit";
-            .nutricionSuperavit{
+            .nutricion__superavit{
                 @include cards (nutricionSuperavit);
-                .imgNutricion{
+                .img__nutricion{
                     width: 200px;
                     border-radius: 5%;
                 }
@@ -45,54 +45,54 @@ body{
                     margin-left: 10px;
                     margin-bottom: 15px;
                 }
-                .nutricionSuperavitInfo{
+                .nutricion__superavit--info{
                     @include infocard();
                 }
             }
-            .nutricionMantenimiento{
+            .nutricion__mantenimiento{
                 @include cards (nutricionMantenimiento);
                 .title{
                     @extend .title;
                 }
-                .nutricionMantenimientoInfo{
+                .nutricion__mantenimiento--info{
                     display: flex;
                     flex-direction: column;
                     padding: 30px;
                     margin: 30px;
                     }
-                .imgNutricion{
+                .img__nutricion{
                     width: 200px;
                     border-radius: 5%;
                 }
             }
-            .nutricionDeficit{
+            .nutricion__deficit{
                 @include cards (nutricionDeficit);
                 margin-bottom: 150px;
                 .title{
                     @extend .title;
                 }
-                .nutricionDeficitInfo{
+                .nutricion__deficit--info{
                     @include infocard();
                 }
-                .imgNutricion{
+                .img__nutricion{
                     width: 200px;
                     border-radius: 5%;
                 }
             }
-            .nutricionCard:hover{
+            .nutricion__card:hover{
                 transform: scale(1.1, 1.1);          /*expandir elemento*/
                 transition: all 1.5s ease;
             }
         }
-        .nutricionFrase{
-            .nutricionFraseContenido{
+        .nutricion__frase{
+            .nutricion__frase--contenido{
                 background-image: url(../img/fobia-alimenticia.jpg);
                 background-position: left;
                 background-size: cover;
                 margin: 0 auto;
                 display: flex;
                 height: 100vh;
-                .nutricionFraseTitle{
+                .nutricion__frase--title{
                     font-size:($font-size)-30;
                     margin: 0 auto;
                     padding: 45px;

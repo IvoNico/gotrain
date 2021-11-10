@@ -50,7 +50,7 @@
                     }
                 }
             }
-            .banner__entrenamiento,.bannerNutricion, .bannerSalud, .bannerContacto{
+            .banner__entrenamiento,.banner__nutricion, .bannerSalud, .banner__contacto{
                 @include title();
             }
             .rutinasTitle{
@@ -104,37 +104,37 @@
         .nutricion{
             .nutricion__contenido{                               /*SECCION NUTRICION*/
                 @include cards();
-                .nutricionSuperavit{
-                    .nutricionCard{
+                .nutricion__superavit{
+                    .nutricion__card{
                         @include flex();
-                        .imgNutricion{
+                        .img__nutricion{
                             @include image();
                         }
                     }
                 }
-                .nutricionMantenimiento{
-                    .nutricionCard{
+                .nutricion__mantenimiento{
+                    .nutricion__card{
                         @include flex();
-                        .imgNutricion{
+                        .img__nutricion{
                             @include image();
                         }
                     }
                 }
-                .nutricionDeficit{
-                    .nutricionCard{
+                .nutricion__deficit{
+                    .nutricion__card{
                         @include flex();
-                        .imgNutricion{
+                        .img__nutricion{
                             @include image();
                         }
                     }
                 }
             } 
         }
-        .nutricionFrase{
-            .nutricionFraseContenido{
+        .nutricion__frase{
+            .nutricion__frase--contenido{
                 width: 100%;
-                .nutricionFraseInfo{
-                    .nutricionFraseTitle{
+                .nutricion__frase--info{
+                    .nutricion__frase--title{
                         margin: 0 auto;
                         display: flex;
                         margin-left:80px;
@@ -196,6 +196,7 @@
                 width: 90%;
                 .label__consulta{
                     height: 15vh;
+                    width: 200px;
                 }
             }
             .error404{                                                  /*SECCION ERROR404*/
@@ -230,11 +231,6 @@
                         }
                     }
                 }
-            }
-        }
-        .banner__entrenamiento, .bannerNutricion, .bannerSalud, .bannerContacto{
-            .banner__title{
-                font-size: ($font-size)-20;
             }
         }
     }
@@ -281,6 +277,14 @@
             }
         }
     }
+        .form{                                                      /*SECCION CONTACTO*/
+            width: 90%;
+            height: 80%;
+            .label__consulta{
+                
+                width: 200px;
+            }
+        }
 }
 @media screen and (max-width: 1024px){
     body{
