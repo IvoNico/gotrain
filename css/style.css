@@ -308,7 +308,8 @@ body .footer {
 
 @media only screen and (max-width: 415px) {
   body header .menu {
-    /*SECCION MENU*/ }
+    /*SECCION MENU*/
+    max-width: 414px; }
     body header .menu .container-fluid .collapse .navbar-nav .nav-item .listasMenuLinks {
       color: #c0b300; }
   body header .banner {
@@ -453,24 +454,25 @@ body .footer {
 
 @media screen and (max-width: 800px) {
   header .menu {
-    /*SECCION MENU*/ }
+    /*SECCION MENU*/
+    max-width: 768px; }
     header .menu .container-fluid .collapse .navbar-nav .nav-item .listasMenuLinks {
       color: #c0b300 !important; }
+  header .banner__entrenamiento .banner__title, header .banner__nutricion .banner__title, header .bannerSalud .banner__title, header .banner__contacto .banner__title {
+    font-size: 50px; }
   main .train {
     /*SECCION INDEX*/ }
     main .train .train__dieta .imagen__index, main .train .train__entrenar .imagen__index, main .train .train__salud .imagen__index {
       height: 25vh; }
-  main .nutricionFrase {
-    /*SECCION NUTRICIÓN*/ }
-    main .nutricionFrase .nutricionFraseContenido {
-      width: 100%; }
-      main .nutricionFrase .nutricionFraseContenido .nutricionFraseInfo .nutricionFraseTitle {
-        margin: 0 auto;
-        display: flex;
-        margin-left: 80px;
-        padding: 0;
-        margin-right: 60px;
-        font-size: 5rem; }
+  main .nutricion__frase .nutricion__frase--contenido {
+    width: 100%; }
+    main .nutricion__frase .nutricion__frase--contenido .nutricion__frase--info .nutricion__frase--title {
+      margin: 0 auto;
+      display: flex;
+      margin-left: 80px;
+      padding: 0;
+      margin-right: 60px;
+      font-size: 3rem; }
   .rutinas {
     /*SECCION RUTINAS*/ }
     .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp {
@@ -490,23 +492,19 @@ body .footer {
       width: 200px; } }
 
 @media screen and (max-width: 1024px) {
-  body header .banner__entrenamiento .banner__title, body header .bannerNutricion .banner__title, body header .bannerSalud .banner__title, body header .bannerContacto .banner__title {
-    font-size: 100px; }
   body main .train {
     /*SECCION INDEX*/ }
     body main .train .train__dieta .imagen__index, body main .train .train__entrenar .imagen__index, body main .train .train__salud .imagen__index {
       height: 20vh; }
-  body main .nutricionFrase {
-    /*SECCION NUTRICIÓN*/ }
-    body main .nutricionFrase .nutricionFraseContenido {
-      width: 100%; }
-      body main .nutricionFrase .nutricionFraseContenido .nutricionFraseInfo .nutricionFraseTitle {
-        margin: 0 auto;
-        display: flex;
-        margin-left: 80px;
-        padding: 0;
-        margin-right: 60px;
-        font-size: 8rem; }
+  body main .nutricion__frase .nutricion__frase--contenido {
+    width: 100%; }
+    body main .nutricion__frase .nutricion__frase--contenido .nutricion__frase--info .nutricion__frase--title {
+      margin: 0 auto;
+      display: flex;
+      margin-left: 80px;
+      padding: 0;
+      margin-right: 60px;
+      font-size: 3rem; }
   body main .rutinas {
     /*SECCION RUTINAS*/ }
     body main .rutinas section.wow.rutinasTablas.animate__.animate__zoomInUp {

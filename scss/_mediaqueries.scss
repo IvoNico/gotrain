@@ -19,7 +19,8 @@
 @media only screen and (max-width: 415px){
     body{
         header{                                        
-            .menu{                                               /*SECCION MENU*/
+            .menu{                                               /*SECCION MENU*/   
+                max-width: 414px;
                 .container-fluid{
                     .collapse{
                         .navbar-nav{
@@ -220,7 +221,8 @@
 }
 @media screen and (max-width: 800px){
     header{
-        .menu{                                               /*SECCION MENU*/
+        .menu{                                             /*SECCION MENU*/
+            max-width: 768px;
             .container-fluid{
                 .collapse{
                     .navbar-nav{
@@ -233,6 +235,9 @@
                 }
             }
         }
+        .banner__entrenamiento,.banner__nutricion, .bannerSalud, .banner__contacto{
+            @include title();
+        }
     }
     main{
         .train{                                              /*SECCION INDEX*/
@@ -242,17 +247,17 @@
                 }
             }
         }
-        .nutricionFrase{                                    /*SECCION NUTRICIÓN*/
-            .nutricionFraseContenido{
+        .nutricion__frase{
+            .nutricion__frase--contenido{
                 width: 100%;
-                .nutricionFraseInfo{
-                    .nutricionFraseTitle{
+                .nutricion__frase--info{
+                    .nutricion__frase--title{
                         margin: 0 auto;
                         display: flex;
                         margin-left:80px;
                         padding: 0;
                         margin-right: 60px;
-                        font-size: 5rem;
+                        font-size: 3rem;
                     }
                 }
             }
@@ -288,13 +293,6 @@
 }
 @media screen and (max-width: 1024px){
     body{
-        header{
-            .banner__entrenamiento, .bannerNutricion, .bannerSalud, .bannerContacto{
-                .banner__title{
-                    font-size: ($font-size);
-                }
-            }
-        }
         main{
             .train{                                              /*SECCION INDEX*/
                 .train__dieta, .train__entrenar, .train__salud{
@@ -303,17 +301,17 @@
                     }
                 }
             }
-            .nutricionFrase{                                    /*SECCION NUTRICIÓN*/
-                .nutricionFraseContenido{
+            .nutricion__frase{
+                .nutricion__frase--contenido{
                     width: 100%;
-                    .nutricionFraseInfo{
-                        .nutricionFraseTitle{
+                    .nutricion__frase--info{
+                        .nutricion__frase--title{
                             margin: 0 auto;
                             display: flex;
                             margin-left:80px;
                             padding: 0;
                             margin-right: 60px;
-                            font-size: 8rem;
+                            font-size: 3rem;
                         }
                     }
                 }
