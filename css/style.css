@@ -309,7 +309,7 @@ body .footer {
 @media only screen and (max-width: 415px) {
   body header .menu {
     /*SECCION MENU*/
-    max-width: 414px; }
+    max-width: 412px; }
     body header .menu .container-fluid .collapse .navbar-nav .nav-item .listasMenuLinks {
       color: #c0b300; }
   body header .banner {
@@ -452,7 +452,7 @@ body .footer {
     body .footer .footerRedes {
       margin-left: 100px; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 415px) {
   header .menu {
     /*SECCION MENU*/
     max-width: 768px; }
@@ -491,7 +491,9 @@ body .footer {
     .form .label__consulta {
       width: 200px; } }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 801px) {
+  body header .banner__entrenamiento .banner__title, body header .banner__nutricion .banner__title, body header .bannerSalud .banner__title, body header .banner__contacto .banner__title {
+    font-size: 50px; }
   body main .train {
     /*SECCION INDEX*/ }
     body main .train .train__dieta .imagen__index, body main .train .train__entrenar .imagen__index, body main .train .train__salud .imagen__index {

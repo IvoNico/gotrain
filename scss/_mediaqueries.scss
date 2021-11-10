@@ -20,7 +20,7 @@
     body{
         header{                                        
             .menu{                                               /*SECCION MENU*/   
-                max-width: 414px;
+                max-width: 412px;
                 .container-fluid{
                     .collapse{
                         .navbar-nav{
@@ -219,7 +219,7 @@
         }
     }
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) and (min-width: 415px){
     header{
         .menu{                                             /*SECCION MENU*/
             max-width: 768px;
@@ -291,8 +291,14 @@
             }
         }
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) and (min-width: 801px){
     body{
+        header{
+            .banner__entrenamiento,.banner__nutricion, .bannerSalud, .banner__contacto{
+                @include title();
+            }
+        }
+        
         main{
             .train{                                              /*SECCION INDEX*/
                 .train__dieta, .train__entrenar, .train__salud{
