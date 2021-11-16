@@ -487,9 +487,7 @@ body .footer {
   .form {
     /*SECCION CONTACTO*/
     width: 90%;
-    height: 80%; }
-    .form .label__consulta {
-      width: 200px; } }
+    height: 80%; } }
 
 @media screen and (max-width: 1024px) and (min-width: 801px) {
   body header .banner__entrenamiento .banner__title, body header .banner__nutricion .banner__title, body header .bannerSalud .banner__title, body header .banner__contacto .banner__title {
@@ -521,6 +519,10 @@ body .footer {
       width: 300px; }
       body main .rutinas .rutinasVideo .rutinasVideoContenido {
         width: 250px; }
+  body main .form {
+    /*SECCION CONTACTO*/
+    width: 90%;
+    height: 80%; }
   body .footer {
     height: 100px;
     align-items: center; }

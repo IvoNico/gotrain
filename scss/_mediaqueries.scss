@@ -285,10 +285,6 @@
         .form{                                                      /*SECCION CONTACTO*/
             width: 90%;
             height: 80%;
-            .label__consulta{
-                
-                width: 200px;
-            }
         }
 }
 @media screen and (max-width: 1024px) and (min-width: 801px){
@@ -340,6 +336,10 @@
                         width: 250px;
                     }
                 }
+            }
+            .form{                                                      /*SECCION CONTACTO*/
+                width: 90%;
+                height: 80%;
             }
         }
         .footer{
